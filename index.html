@@ -5,1094 +5,1185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Guia para um RPG de mesa que se passa no império Carolíngio">
     <meta name="author" content="Luiz Felipe Pereira de Lima">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
     <title>RPG Carolíngio</title>
 </head>
-    <h1>RPG Carolíngio</h1>
-    <h2 id="sumario">Sumário</h2>
-    <ul>
-        <li><a href="#Ambientação">Introdução</a></li>
-        <li><a href="#Atributos">Atributos</a></li>
-        <li><a href="#Peso">Peso e espaço</a></li>
-        <li><a href="#Personagem">Criação de personagem</a></li>
-        <li><a href="#Vida">Vida</a></li>
-        <li><a href="#Armas">Armas e armaduras</a></li>
-        <li><a href="#Combate">Combate</a></li>
-        <li><a href="#Animais">Animais</a></li>
-        <li><a href="#Economia">Economia</a></li>
-        <li><a href="#Ano">Estações do ano</a></li>
-        <li><a href="#Poções">Poções</a></li>
-        <li><a href="#Subindo">Subindo de nível</a></li>
-    </ul>
-    <h2 id="Ambientação"><a href="#sumario">Uma pequena ambietação</a></h2>
-    <p>Crônicas do Império Carolíngio
-Ano do Senhor de 801.
-Há mais de trinta anos, o Reino dos Francos vem sendo unido e expandido sob o comando de Carlos Magno, rei dos francos e dos lombardos, senhor de vastas terras que se estendem das montanhas da Itália até as florestas da Saxônia. Seu governo trouxe estabilidade a muitas regiões antes marcadas por guerras entre pequenos senhores. No dia do Senhor de 25 de Dezembro de 800, o Papa coroou o rei Carlos Magno como imperador dos Romanos
-O imperador é conhecido por valorizar a justiça, a educação e a organização de seu reino. Arautos e inspetores percorrem constantemente o império verificando se as leis reais são cumpridas, e poucos nobres ousam desafiar sua autoridade abertamente.</p>
-<p>Carlos Magno governa cercado por filhos, parentes e conselheiros. A sucessão do trono ainda desperta discussões entre muitos nobres, mas o poder de Carlos Magno permanece incontestável. Os Paladinos também exercem grande influência no governo do imperador, eles são cavaleiros de enorme prestígio, escolhidos por sua coragem, lealdade e honra. Servem diretamente ao imperador nas missões mais importantes, levando mensagens, protegendo autoridades e liderando tropas quando necessário.</p>
-<p>Durante décadas, o império combateu os povos saxões ao norte e nordeste. Muitos saxões aceitaram o domínio franco, jurando fidelidade ao rei e adotando a fé cristã. Outros, porém, continuam resistindo nas florestas e regiões mais afastadas. Mesmo após tantos anos de guerra, pequenos focos de rebelião ainda surgem ocasionalmente, e soldados continuam patrulhando as fronteiras. Para muitos habitantes do império, a guerra nunca terminou completamente.</p>
-<p>Embora todos reconheçam a autoridade de Carlos Magno, cada região possui costumes próprios.<strong>Austrásia</strong> é o coração político do império e abriga importantes cidades e fortalezas.É a maior província e é dividida em quatro subregiões: Austrásia do Norte, Austrásia do Sul, Frísia e Neustria. <strong>Borgonha</strong> é conhecida por suas excelentes plantações, vinhos e mercadores. ela é dividida em duas subregiões: Borgonha e Provença. <strong>Lombardia</strong>, ao sul, mantém forte tradição comercial herdada das antigas cidades italianas.<strong>Aquitânia</strong> possui vastos campos férteis e importantes rotas comerciais. Ela é dividida em duas subregiões: Aquitânia e Gasconha. <strong>Bretanha</strong> conserva muitos costumes antigos e um povo de espírito independente.<strong>Saxônia</strong>, por fim, permanece sendo a região mais instável do império, onde ainda existem grupos que resistem ao domínio franco.</p>
-<p>A maior parte da população vive em pequenas aldeias trabalhando na agricultura. Trigo, cevada, aveia e centeio ocupam grande parte das plantações, enquanto vinhedos, pomares e hortas abastecem cidades e mosteiros. A caça, a pesca e a criação de animais também são essenciais para muitas comunidades. Mercadores percorrem as estradas levando tecidos, sal, ferro, vinho, cerveja, peles, madeira e especiarias entre as cidades.</p>
-<p>No extremo oriental da Austrásia encontra-se a importante região de Colônia, uma das principais portas de entrada para as terras saxãs. Durante muitos anos a cidade foi governada por uma família nobre, porém denúncias de corrupção e descumprimento das ordens imperiais levaram Carlos Magno a retirar-lhe o condado. Desde então, Colônia é administrada por um Magistrado, eleito entre os grandes proprietários da cidade a cada três anos, enquanto um Administrador Imperial supervisiona o cumprimento das leis do imperador. A situação agrada aos ricos comerciantes, mas muitos habitantes defendem que um novo conde seja finalmente nomeado. Ao redor de Colônia encontram-se cinco importantes condados.</p>
-<p><strong>Colônia:</strong> Maior cidade da região. Centro político, comercial e militar. Sua grande ponte permite a travessia do rio e recebe comerciantes vindos de todas as partes do império.</p>
-<p><strong>Sumont:</strong> Governado pela Casa Wanssar. Condado conhecido por sua disciplina, suas florestas e pela lealdade de seus nobres ao imperador.</p>
-<p><strong>Drariaca:</strong> Governado pela Casa Berlos. Suas terras férteis produzem grãos, frutas e excelentes vinhos. O comércio movimenta boa parte da riqueza da região.</p>
-<p><strong>Rodsvar:</strong> Governado pela Casa Kincer. Terra de guerreiros respeitados, responsável por proteger importantes estradas ao sul.</p>
-<p><strong>Clonvia:</strong> Governado pela Casa Poranie. Grandes florestas e vilas de caçadores marcam a paisagem desse pequeno condado situado entre importantes rotas comerciais.</p>
-<p><strong>Docimenia:</strong> Governado pela Casa Klasforter. Localizado na fronteira norte, convive há décadas com as consequências das guerras contra os saxões.Seu povo é conhecido pela coragem e pela desconfiança em relação aos estrangeiros.</p>
-<p>Viajar nunca é completamente seguro.Lobos, javalis e ursos ainda habitam muitas florestas. Salteadores atacam comerciantes nas estradas menos movimentadas, enquanto algumas antigas ruínas romanas permanecem abandonadas e cercadas por histórias assustadoras.Mesmo assim, o comércio continua crescendo, e centenas de viajantes percorrem diariamente as rotas entre Colônia, Veliacasa, Adlerhem e as demais vilas da região.</p>
-<p>O comércio utiliza principalmente duas moedas. Óbolo: usado para pequenas compras do dia a dia. Um pão costuma custar um óbolo. Denário: moeda de maior valor, equivalente aproximadamente ao salário de um trabalhador durante um dia. Dez óbolos equivalem a um denário.</p>
-<p>As terras de Colônia são relativamente seguras, mas algumas regras devem ser respeitadas. Homens livres podem portar armas para sua defesa durante viagens, porém mercenários e companhias armadas devem registrar-se perante as autoridades do condado onde permanecerem.Cada conde possui certa autonomia para aplicar suas próprias normas, embora todos reconheçam a autoridade do imperador. A paz do império depende da lealdade de seus nobres e da vigilância constante de seus homens.</p>
-<p><strong>"Enquanto as estradas permanecerem abertas, os sinos continuarem tocando e a justiça do imperador alcançar até a menor aldeia, o império permanecerá unido."</strong> Máxima de Carlos Magno</p>
+<body>
+    <nav id="sumario" class="cima">
+        <div class="titulo">
+            <h1>RPG Carolíngio</h1>
+        </div>
+        <div class="sumario">
+            <a href="#Ambientação">Introdução</a>
+            <a href="#Atributos">Atributos</a>
+            <a href="#Peso">Peso e espaço</a>
+            <a href="#Personagem">Criação de personagem</a>
+            <a href="#Vida">Vida</a>
+            <a href="#Armas">Armas e armaduras</a>
+            <a href="#Combate">Combate</a>
+            <a href="#Animais">Animais</a>
+            <a href="#Economia">Economia</a>
+            <a href="#Ano">Estações do ano</a>
+            <a href="#Poções">Poções</a>
+            <a href="#Subindo">Subindo de nível</a>
+        </div>
+    </nav>
+    <header class="corpo">
+        <h2 id="Ambientação"><a href="#sumario">Uma pequena ambietação</a></h2>
+        <p>Crônicas do Império Carolíngio. <br> Ano do Senhor de 801. Há mais de trinta anos, o Reino dos Francos vem sendo unido e expandido sob o comando de Carlos Magno, rei dos francos e dos lombardos, senhor de vastas terras que se estendem das montanhas da Itália até as florestas da Saxônia. Seu governo trouxe estabilidade a muitas regiões antes marcadas por guerras entre pequenos senhores. No dia do Senhor de 25 de Dezembro de 800, o Papa coroou o rei Carlos Magno como imperador dos Romanos. O imperador é conhecido por valorizar a justiça, a educação e a organização de seu reino. Arautos e inspetores percorrem constantemente o império verificando se as leis reais são cumpridas, e poucos nobres ousam desafiar sua autoridade abertamente.
+        <br><br>Carlos Magno governa cercado por filhos, parentes e conselheiros. A sucessão do trono ainda desperta discussões entre muitos nobres, mas o poder de Carlos Magno permanece incontestável. Os Paladinos também exercem grande influência no governo do imperador, eles são cavaleiros de enorme prestígio, escolhidos por sua coragem, lealdade e honra. Servem diretamente ao imperador nas missões mais importantes, levando mensagens, protegendo autoridades e liderando tropas quando necessário.
+        <br><br>Durante décadas, o império combateu os povos saxões ao norte e nordeste. Muitos saxões aceitaram o domínio franco, jurando fidelidade ao rei e adotando a fé cristã. Outros, porém, continuam resistindo nas florestas e regiões mais afastadas. Mesmo após tantos anos de guerra, pequenos focos de rebelião ainda surgem ocasionalmente, e soldados continuam patrulhando as fronteiras. Para muitos habitantes do império, a guerra nunca terminou completamente.
+        <br><br>Embora todos reconheçam a autoridade de Carlos Magno, cada região possui costumes próprios.<strong>Austrásia</strong> é o coração político do império e abriga importantes cidades e fortalezas.É a maior província e é dividida em quatro subregiões: Austrásia do Norte, Austrásia do Sul, Frísia e Neustria. <strong>Borgonha</strong> é conhecida por suas excelentes plantações, vinhos e mercadores. ela é dividida em duas subregiões: Borgonha e Provença. <strong>Lombardia</strong>, ao sul, mantém forte tradição comercial herdada das antigas cidades italianas.<strong>Aquitânia</strong> possui vastos campos férteis e importantes rotas comerciais. Ela é dividida em duas subregiões: Aquitânia e Gasconha. <strong>Bretanha</strong> conserva muitos costumes antigos e um povo de espírito independente.<strong>Saxônia</strong>, por fim, permanece sendo a região mais instável do império, onde ainda existem grupos que resistem ao domínio franco.
+        <br><br>A maior parte da população vive em pequenas aldeias trabalhando na agricultura. Trigo, cevada, aveia e centeio ocupam grande parte das plantações, enquanto vinhedos, pomares e hortas abastecem cidades e mosteiros. A caça, a pesca e a criação de animais também são essenciais para muitas comunidades. Mercadores percorrem as estradas levando tecidos, sal, ferro, vinho, cerveja, peles, madeira e especiarias entre as cidades.
+        <br><br>No extremo oriental da Austrásia encontra-se a importante região de Colônia, uma das principais portas de entrada para as terras saxãs. Durante muitos anos a cidade foi governada por uma família nobre, porém denúncias de corrupção e descumprimento das ordens imperiais levaram Carlos Magno a retirar-lhe o condado. Desde então, Colônia é administrada por um Magistrado, eleito entre os grandes proprietários da cidade a cada três anos, enquanto um Administrador Imperial supervisiona o cumprimento das leis do imperador. A situação agrada aos ricos comerciantes, mas muitos habitantes defendem que um novo conde seja finalmente nomeado. Ao redor de Colônia encontram-se cinco importantes condados.
+        <br><br><strong>Colônia:</strong> Maior cidade da região. Centro político, comercial e militar. Sua grande ponte permite a travessia do rio e recebe comerciantes vindos de todas as partes do império.
+        <br><br><strong>Sumont:</strong> Governado pela Casa Wanssar. Condado conhecido por sua disciplina, suas florestas e pela lealdade de seus nobres ao imperador.
+        <br><br><strong>Drariaca:</strong> Governado pela Casa Berlos. Suas terras férteis produzem grãos, frutas e excelentes vinhos. O comércio movimenta boa parte da riqueza da região.
+        <br><br><strong>Rodsvar:</strong> Governado pela Casa Kincer. Terra de guerreiros respeitados, responsável por proteger importantes estradas ao sul.
+        <br><br><strong>Clonvia:</strong> Governado pela Casa Poranie. Grandes florestas e vilas de caçadores marcam a paisagem desse pequeno condado situado entre importantes rotas comerciais.
+        <br><br><strong>Docimenia:</strong> Governado pela Casa Klasforter. Localizado na fronteira norte, convive há décadas com as consequências das guerras contra os saxões.Seu povo é conhecido pela coragem e pela desconfiança em relação aos estrangeiros.
+        <br><br>Viajar nunca é completamente seguro.Lobos, javalis e ursos ainda habitam muitas florestas. Salteadores atacam comerciantes nas estradas menos movimentadas, enquanto algumas antigas ruínas romanas permanecem abandonadas e cercadas por histórias assustadoras.Mesmo assim, o comércio continua crescendo, e centenas de viajantes percorrem diariamente as rotas entre Colônia, Veliacasa, Adlerhem e as demais vilas da região.
+        <br><br>O comércio utiliza principalmente duas moedas. Óbolo: usado para pequenas compras do dia a dia. Um pão costuma custar um óbolo. Denário: moeda de maior valor, equivalente aproximadamente ao salário de um trabalhador durante um dia. Dez óbolos equivalem a um denário.
+        <br><br>As terras de Colônia são relativamente seguras, mas algumas regras devem ser respeitadas. Homens livres podem portar armas para sua defesa durante viagens, porém mercenários e companhias armadas devem registrar-se perante as autoridades do condado onde permanecerem.Cada conde possui certa autonomia para aplicar suas próprias normas, embora todos reconheçam a autoridade do imperador. A paz do império depende da lealdade de seus nobres e da vigilância constante de seus homens.
+        <br><br><strong>"Enquanto as estradas permanecerem abertas, os sinos continuarem tocando e a justiça do imperador alcançar até a menor aldeia, o império permanecerá unido."</strong> Máxima de Carlos Magno</p>
+        </header>
+    <section class="atributo">
+        <h2 id="Atributos"><a href="#sumario">Atributos</a></h2>
+        <p>Nosso rpg contará com 6 atributos: Força, Destreza, Inteligência, Sabedoria/Detecção, Carisma e Constituição</p>
+        <p>Os atributos podem chegar a no máximo 8 pontos, com exceção de Constituição que pode chegar a 10</p>
+        <h3>Bônus por pontos de atributo</h3>
+        <p>0 pontos de atributo = -4 de bônus</p>
+        <p>1 ponto de atributo = -3 de bônus</p>
+        <p>2 pontos de atributo = -2 de bônus</p>
+        <p>3 pontos de atributo = -1 de bônus</p>
+        <p>4 pontos de atributo = 0 de bônus</p>
+        <p>5 pontos de atributo = 0 de bônus</p>
+        <p>6 pontos de atributo = +1 de bônus</p>
+        <p>7 pontos de atributo = +2 de bônus</p>
+        <p>8 pontos de atributo = +3 de bônus</p>
+        <h3>Inteligência</h3>
+        <p>"O que eu sei"</p>
+        <p>Inteligência é o atributo principal para: história, religião, engenharia, artesanato, idiomas, estratégia, investigação, alquimia e avaliação de objetos</p>
+        <h3>Sabedoria</h3>
+        <p>"O que eu percebo"</p>
+        <p>Sabedoria é o atributo principal para: medicina, percepção, sobrevivência, rastreamento, navegação natural, domar animais, detectar mentiras e encontrar água e alimento</p>
+    </section>
 
-    <h2 id="Atributos"><a href="#sumario">Atributos</a></h2>
-    <p>Nosso rpg contará com 6 atributos: Força, Destreza, Inteligência, Sabedoria/Detecção, Carisma e Constituição</p>
-    <p>Os atributos podem chegar a no máximo 8 pontos, com exceção de Constituição que pode chegar a 10</p>
-    <h3>Bônus por pontos de atributo</h3>
-    <p>0 pontos de atributo = -4 de bônus</p>
-    <p>1 ponto de atributo = -3 de bônus</p>
-    <p>2 pontos de atributo = -2 de bônus</p>
-    <p>3 pontos de atributo = -1 de bônus</p>
-    <p>4 pontos de atributo = 0 de bônus</p>
-    <p>5 pontos de atributo = 0 de bônus</p>
-    <p>6 pontos de atributo = +1 de bônus</p>
-    <p>7 pontos de atributo = +2 de bônus</p>
-    <p>8 pontos de atributo = +3 de bônus</p>
-    <h3>Inteligência</h3>
-    <p>"O que eu sei"</p>
-    <p>Inteligência é o atributo principal para: história, religião, engenharia, artesanato, idiomas, estratégia, investigação, alquimia e avaliação de objetos</p>
-    <h3>Sabedoria</h3>
-    <p>"O que eu percebo"</p>
-    <p>Sabedoria é o atributo principal para: medicina, percepção, sobrevivência, rastreamento, navegação natural, domar animais, detectar mentiras e encontrar água e alimento</p>
+    <section class="peso">
+        <h2 id="Peso"><a href="#sumario">Peso e Espaço</a></h2>
+        <p>Ao invés de seguirmos uma lógica de peso numérico, iremos utilizar espaços de inventário (slots). Cada personagem terá 10 slots e cada objeto ocupará um espaço de slot. Objetos podem ocupar: 1/10 de slot (flechas); 1/4 de slot (pote); 1/2 slot (adaga); 1 slot (espada) e 2 slots (armadura)</p>
+        <p>1/10 de slot: objetos que cabem na palma da mão (flechas, velas, chaves)</p>
+        <p>1/4 de slot: pequenos recipientes e alimentos (poções, tigelas)</p>
+        <p>1/2 de slot: equipamentos de cintura (adagas, cantis, bolsas)</p>
+        <p>1 slot: armas de uma mão, ferramentas e roupas volumosas</p>
+        <p>2 slots: armas de duas mãos, escudos, armaduras e equipamentos grandes</p>
+        <p><strong>Importante:</strong> Lembrando que isso é um limite para o peso que o personagem pode carregar, então tudo que o personagem está carregando deve ter um espaço no inventário, incluindo a armadura que está sendo usada</p>
+        <h3>Equipamentos de bagagem</h3>
+        <p>Bolsa = ocupa 1/2 slot e tem o espaço de 2 slots</p>
+        <p>Mochila = ocupa 1 slot e tem espaço de 4 slots</p>
+        <p>Mula = tem espaço para 40 slots</p>
+    </section>
 
-    <h2 id="Peso"><a href="#sumario">Peso e Espaço</a></h2>
-    <p>Ao invés de seguirmos uma lógica de peso numérico, iremos utilizar espaços de inventário (slots). Cada personagem terá 10 slots e cada objeto ocupará um espaço de slot. Objetos podem ocupar: 1/10 de slot (flechas); 1/4 de slot (pote); 1/2 slot (adaga); 1 slot (espada) e 2 slots (armadura)</p>
-    <p>1/10 de slot: objetos que cabem na palma da mão (flechas, velas, chaves)</p>
-    <p>1/4 de slot: pequenos recipientes e alimentos (poções, tigelas)</p>
-    <p>1/2 de slot: equipamentos de cintura (adagas, cantis, bolsas)</p>
-    <p>1 slot: armas de uma mão, ferramentas e roupas volumosas</p>
-    <p>2 slots: armas de duas mãos, escudos, armaduras e equipamentos grandes</p>
-    <p><strong>Importante:</strong> Lembrando que isso é um limite para o peso que o personagem pode carregar, então tudo que o personagem está carregando deve ter um espaço no inventário, incluindo a armadura que está sendo usada</p>
-    <h3>Equipamentos de bagagem</h3>
-    <p>Bolsa = ocupa 1/2 slot e tem o espaço de 2 slots</p>
-    <p>Mochila = ocupa 1 slot e tem espaço de 4 slots</p>
-    <p>Mula = tem espaço para 40 slots</p>
+    <section class="personagem">
+        <h2 id="Personagem"><a href="#sumario"> Criação de Personagem</a></h2>
+        <h3>Pontos de Vida</h3>
+        <p>Todo ser humano começa com 8 de vida, cada jogador jogará um dado de 6 lados, o número que cair será somado aos seus 8 pontos de vida. Depois, o jogador deve dividir seus pontos de vida por 2, e o resultado será seus pontos de constituição.</p>
+        <p>Jogando um dado de 6 lados haverá 50% de chance de cair um número ímpar, caso isso aconteça, o jogador terá que escolher se deixa o ponto solitário nos pontos de vida ou se adiciona ele em outro atributo, como um ponto de atributo. <strong>Importante: o ponto derivado de número ímpar não pode ser colocado no atributo constituição.</strong></p>
+        <p> Se o personagem tem um número impar como pontos de vida, ele ganha +1 em rolagens de sorte</p>
+        <p>O número máximo de pontos de vida que uma pessoa pode ter é 20</p>
 
-    <h2 id="Personagem"><a href="#sumario"> Criação de Personagem</a></h2>
-    <h3>Pontos de Vida</h3>
-    <p>Todo ser humano começa com 8 de vida, cada jogador jogará um dado de 6 lados, o número que cair será somado aos seus 8 pontos de vida. Depois, o jogador deve dividir seus pontos de vida por 2, e o resultado será seus pontos de constituição.</p>
-    <p>Jogando um dado de 6 lados haverá 50% de chance de cair um número ímpar, caso isso aconteça, o jogador terá que escolher se deixa o ponto solitário nos pontos de vida ou se adiciona ele em outro atributo, como um ponto de atributo. <strong>Importante: o ponto derivado de número ímpar não pode ser colocado no atributo constituição.</strong></p>
-    <p> Se o personagem tem um número impar como pontos de vida, ele ganha +1 em rolagens de sorte</p>
-    <p>O número máximo de pontos de vida que uma pessoa pode ter é 20</p>
+        <h3>Terra Natal</h3>
+        <p>Existem cinco territórios de onde os jogadores podem ser: Aquitânia, Austrásia, Borgonha, Bretanha e Lombardia. Cada uma da pontos de atributos diferentes.</p>
+        <h4>Aquitânia</h4>
+        <p>Os aquitanos são refinados, orgulhosos e romanizados</p>
+        <p>+1 em destreza e inteligência</p>
+        <h4>Austrásia</h4>
+        <p>Os austrasianos são guerreiros disciplinados e austeros</p>
+        <p>+1 em força e inteligência</p>
+        <h4>Borgonha</h4>
+        <p>Os borgonheses são diplomáticos e sociáveis</p>
+        <p>+1 em constituição e carisma</p>
+        <h4>Bretanha</h4>
+        <p>Os bretões são celtas teimosos e tradicionalistas</p>
+        <p>+1 em destreza e sabedoria</p>
+        <h4>Lombardia</h4>
+        <p>Os lombardos são astutos, urbanos e políticos</p>
+        <p>+1 em força e carisma</p>
 
-    <h3>Terra Natal</h3>
-    <p>Existem cinco territórios de onde os jogadores podem ser: Aquitânia, Austrásia, Borgonha, Bretanha e Lombardia. Cada uma da pontos de atributos diferentes.</p>
-    <h4>Aquitânia</h4>
-    <p>Os aquitanos são refinados, orgulhosos e romanizados</p>
-    <p>+1 em destreza e inteligência</p>
-    <h4>Austrásia</h4>
-    <p>Os austrasianos são guerreiros disciplinados e austeros</p>
-    <p>+1 em força e inteligência</p>
-    <h4>Borgonha</h4>
-    <p>Os borgonheses são diplomáticos e sociáveis</p>
-    <p>+1 em constituição e carisma</p>
-    <h4>Bretanha</h4>
-    <p>Os bretões são celtas teimosos e tradicionalistas</p>
-    <p>+1 em destreza e sabedoria</p>
-    <h4>Lombardia</h4>
-    <p>Os lombardos são astutos, urbanos e políticos</p>
-    <p>+1 em força e carisma</p>
-
-    <h3>Profissão</h3>
-    <p>Os personagens podem escolher uma antiga função que desempenhavam. Podem ser, mas não se limitando a: andarilho, camponês, médico, caçador, aprendiz de soldado, ladrão, bardo, mensageiro, mercador, ferreiro, noviço, artesão, pastor, mercenário novato, lenhador, pescador, moleiro, cozinheiro, escudeiro, guarda da cidade, marinheiro, pedreiro, minerador, caçador de recompensas, falcoeiro, estalajadeiro, escriba, taverneiro, batedor, etc.</p>
-    <h4>vantagens das profissôes</h4>
-    <p>mercador = +3 slots para coisas se usar uma mochila e +1 para todas as rolagens que envolvam comércio. (mínimo 2 em carisma e inteligência)</p>
-    <p>andarilho = consegue ter um bom descanso em qualquer lugar</p>
-    <p>noviço = sabe ler e escrever nas línguas vernácula e latim, sabe fazer poções de cura e remédios, (respeitando as regras de atributos encontradas em Poções), +2 para encontrar ingredientes naturais(mínimo 3 em inteligência e 2 em sabedoria)</p>
-    <p>Ferreiro = consegue melhorar armas para que elas deem + 1 de dano (Cada arma só pode ser melhorada uma vez)(mínimo 5 constituição, 2 em inteligência e 1 em sabedoria)</p>
-    <p>Pastor = tem um cachorro com 8 de vida e d6 de dano, +1 para encontrar ingredientes naturais (mínimo 1 em sabedoria e inteligência)</p>
-    <p>Aprendiz de soldado = + 1 em defesa ativa (mínimo 2 em destreza e força)</p>
-    <p>Mercenário novato = + 1 em atacando defesa ativa (mínimo 2 em destreza e força)</p>
-    <p>Caçador = +4 para rastrear animais em terras selvagens (florestas, campos e montanhas), +2 para rastrear pessoas em terras selvagens e para encontrar ingredientes naturais(mínimo 2 em destreza, inteligência e sabedoria)</p>
-    <p>Médico = +4 para estancar ferimentos, +2 para cuidar de doenças e envenenamentos e sabe fazer poções  (respeitando as regras de atributos encontradas em Poções) (mínimo 3 em inteligência e sabedoria)</p>
-    <p>Ladrão = +2 para furtos e arrombamentos, +2 em furtividade em cidade. +1 em furtividade em ambientes naturais (mínimo 2 em destreza e 1 em sabedoria)</p>
-    <p>Bardo = +2 em convencimento e disfarce, sabe tocar um instrumento (mínimo 3 em destreza e carisma)</p>
-    <p>Contrabandista = +2 em negociação de mercadorias ilegais e para esconder objetos durante revistas ou inspeções (mínimo 2 em destreza, inteligência e carisma)</p>
-    <p>Mensageiro = +2 para encontrar riachos, +1 para encontrar árvores frutíferas. Consegue percorrer 5 km adicionais por dia de viagem (mínimo 1 em sabedoria e inteligência)</p>
-    <p>Campônes = +2 para encontrar árvores frutíferas e riachos, +1 em agricultura, +2 para encontrar ingredientes naturais (mínimo 5 em constituição e 1 em sabedoria e inteligência)</p>
-    <p>Artesão = Consegue fabricar equipamentos e objetos para venda (mínimo 3 em inteligência e 2 em destreza)</p>
-    <p>Lenhador = derruba árvores e abre caminho mais rápido. Consegue produzir lenha suficiente para um acampamento durante dois descanços, +1 para encontrar ingredientes naturais, +2 para tirar casca de salgueiro (mínimo 2 em força e destreza)</p>
-    <p>Pescador = +4 para pesca. +2 para navegar pequenas embarcações (mínimo 2 em sabedoria e inteligência e 1 em destreza)</p>
-    <p>Moleiro = reconhece grãos de boa qualidade. +2 para avaliar alimentos e detectar grãos estragados (mínimo 2 em sabedoria e inteligência)</p>
-    <p>Cozinheiro = durante descansos pode fazer refeições que recuperam +1 ponto de vida (mínimo 1 em inteligência e sabedoria)</p>
-    <p>Escudeiro = +1 de iniciativa. Concede +1 em defesa ativa para um aliado por turno (mínimo 1 em força, destreza, inteligência e sabedoria)</p>
-    <p>Guarda da cidade = +2 para perceber comportamentos suspeitos. +2 em intimidação contra criminosos (mínimo 2 em carisma e 1 em sabedoria, inteligência, força e destreza)</p>
-    <p>Marinheiro = +2 em testes envolvendo barcos. Nunca sofre penalidades por enjoo durante viagens de barco (mínimo 5 em constituição e 1 em sabedoria, inteligência e destreza)</p>
-    <p>Pedreiro = Consegue improvisar pequenas fortificações (mínimo 2 em força, sabedoria e inteligência)</p>
-    <p>Minerador = +2 para encontrar veios de pedra e minério. Reconhece metais comuns (mínimo 5 em constituição, 2 em força e 1 em inteligência e sabedoria)</p>
-    <p>Caçador de recompenças = +2 para rastrear fugitivos. +1 em intimidação (mínimo 1 em força, inteligência, sabedoria, destreza e carisma)</p>
-    <p>Falcoeiro = Possui um falcão treinado com 6 de vida e d4 de dano. O falcão pode localizar presas pequenas ou transmitir sinais visuais a curta distância (mínimo 3 em sabedoria e 2 em inteligência)</p>
-    <p>Estalajadeiro = +2 em negociação. Sempre sabe obter rumores em tavernas e hospedarias (mínimo 3 em carisma e 1 em inteligência)</p>
-    <p>Escriba = sabe ler e escrever em língua vernácula. +2 para copiar documentos sem erros. Reconhece selos e documentos falsificados (mínimo 3 em inteligência e 2 em destreza)</p>
-    <p>Taverneiro = +2 em convencer pessoas embriagadas. Sempre consegue descobrir rumores locais após algum tempo em uma taverna (mínimo 5 em constituição, 3 em carisma e 1 em inteligência e sabedoria)</p>
-    <p>Batedor = +2 para rastrear pessoas. +1 para rastrear animais +2 em furtividade em ambientes naturais. O grupo não pode ser surpreendido por emboscadas enquanto ele estiver na frente da marcha, exceto por criaturas ou inimigos excepcionalmente furtivos (mínimo 4 em destreza, 3 em sabedoria e 1 em inteligência)</p>
-    <h4>Exemplicando algumas profissôes</h4>
-    <p>Cozinheiro = um pão com ovo daria +3 de vida, se feito por um cozinheiro isso vai para +4. O cozinheiro pode aumentar o limite de cura total dos alimentos para 9</p>
-    <h4>Inicio dos personagens</h4>
-    <p><strong>Nota:</strong> Todo personagem pode escolher começar com 10 denários + 1d6, uma túnica, uma calça, um cinto e um par de botas</p>
-    <p>Mercador = 5 denários + 1d6, uma mochila, uma túnica, uma calça, um cinto, um par de luvas e um par de botas</p>
-    <p>Andarilho = 3 denários + 1d6, um bastão</p>
-    
-    <h3>Perícias e Vantagens</h3>
-    <p>Cada personagem tem dois pontos para pegar vantagens e perícias</p>
-    <p>reflexo aprimorado = +1 em iniciativa (1 ponto)</p>
-    <p>Esguio = +1 de defesa passiva (1 ponto)</p>
-    <p>Silêncioso = +1 em furtividade (1 ponto)</p>
-    <p>Canhoto = +1 atacando defesa ativa (1 ponto)</p>
-    <p>Olhos de águia = +1 atacando defesa passiva (1 ponto)</p>
-    <p>Observador = +2 para perceber armadilhas, pistas e emboscadas (1 ponto)</p>
-    <p>Resistente = +2 para resistir a doenças e venenos (1 ponto)</p>
-    <p>Montador = +2 em testes envolvendo cavalos (1 ponto)</p>
-    <p>Pé leve = Ignora terreno difícil causado por lama, neve rasa ou vegetação densa (1 ponto)</p>
-    <p>Corajoso = +2 contra intimidação e medo (1 ponto)</p>
-    <p>Combatente defensivo = +1 em defesa ativa (1 ponto)</p>
-    <p>Golpe preciso = Uma vez por combate, pode repetir a rolagem de dano(1 ponto)</p>
-    <p>Mão firme = ignora a penalidade por atacar após andar no mesmo turno com armas à distância (1 ponto)</p>
-    <p>Herborista = +2 para encontrar ervas, raízes, cogumelos e outros ingredientes alquímicos na natureza (1 ponto)</p>
-    <p>Alquimista = sabe fazer poções (respeitando as regras de atributos encontradas em Poções)</p>
-    <p>Rastreador = +2 para seguir rastros de pessoas ou animais (1 ponto)</p>
-    <p>Escalador = +2 para subir árvores, muralhas e penhascos (1 ponto)</p>
-    <p>Nadador = +2 para nadar (1 ponto)</p>
-    <p>Montanhista = anda em terrenos rochosos ou montanhosos como se andasse por uma estrada não tão boa em viagem (25km por dia) (1 ponto)</p>
-    <p>Estõmago forte = Não sofre penalidades por comer alimentos de baixa qualidade (1 ponto)</p>
-    <p>Dorminhoco experiente = Recupera-se normalmente mesmo dormindo ao relento (1 ponto)</p>
-    <p>Memória excelente = +2 para lembrar nomes, lugares e acontecimentos (1 ponto)</p>
-    <p>Língua afiada = +2 para blefes e mentiras (1 ponto)</p>
-    <p>Voz imponente = +2 em intimidação (1 ponto)</p>
-    <p>Negociador = +1 em qualquer compra ou venda (1 ponto)</p>
-    <p>Bonito = +2 em toda rolagem de convencimento para npcs do sexo oposto (1 ponto)</p>
-    <p>Diplomata = +2 em negociação e mediação de conflitos (2 pontos)</p>
-    <p>Boa reputação = Começa a campanha conhecido positivamente no condado natal (1 ponto)</p>
-    <p>Pele grossa = +1 em absorver dano (2 pontos)</p>
-    <p>Letrado = sabe ler e escrever em língua vernácula (1 ponto)</p>
-    <p>Letrado II = sabe ler e escrever em língua vernácula e em latim (2 pontos)</p>
-    <p>Fiel companheiro = tem um cachorro com 8 de vida e d6 de dano (2 pontos)</p>
-    <p>Casca-grossa = Na primeira vez que chegaria a 0 PV em um combate, permanece com 1 PV (1 ponto)</p>
-    <p>Veterano = +1 em iniciativa e +1 em testes de medo (2 pontos)</p>
-    <p>Mente fria = no começo combate, pode escolher agir por último na iniciativa e receber +2 em sua defesa ativa por 2 turnos (2 pontos)</p>
-    <h3>As maestrias podem ser escolhidas no nível 3</h3>
-    <p>Maestria com espadas = pode rolar dois d20 para o acerto e pegar o maior</p>
-    <p>Maestria com adagas = pode rolar dois d20 para o acerto e pegar o maior</p>
-    <p>Maestria com machados = pode rolar dois d20 para o acerto e pegar o maior</p>
-    <p>Maestria com lanças = pode rolar dois d20 para o acerto e pegar o maior</p>
-    <p>Maestria com bastões = pode rolar dois d20 para o acerto e pegar o maior</p>
-    <p>Maestria com martelos = pode rolar dois d20 para o acerto e pegar o maior</p>
-    <p>Maestria com arcos = pode rolar dois d20 para o acerto e pegar o maior</p>
-    <p>Maestria com bestas = pode rolar dois d20 para o acerto e pegar o maior</p>
-    <p>Maestria com poções = pode rolar dois dados de efeito de poções e pegar o maior</p>
-
-    <h2 id="Vida"><a href="#sumario"> Vida</a></h2>
-    <h3>0 de Vida</h3>
-    <p>Caso um personagem chegue a 0 de vida, ele fica inconsciente e o jogador rola um d3. O resultado do d3 vai ser a diminuição da constituição do personagem por turno, se a constituição chgar a 0 o personagem morre. Para estancar a perda de constituição um outro personagem precisará passar por um teste de sabedoria ou inteligência</p>
-    <h3>Descanso</h3>
-    <p>Descanso longo = Descansar em cama ou descansar em um lugar confortável e seguro por 8 horas recupera metade da vida</p>
-    <p>Descanso medio = Descansar em cama ou descansar em um lugar confortável e seguro por 4 horas, ou em qualquer outro lugar por 8 horas recupera metade da metade da vida</p>
-    <p>Descanso curto = descansar por 1 hora em qualquer lugar recupera 1 de vida, só funciona 4 vezes por dia</p>
-    <p>Usar manto ou cobertor em qualquer lugar durante um descanso logo ou médio recupera +1 de vida</p>
-    <p>Uma tenda pequena combinada com uma fogueira e um cobertor ou um manto, se encaixa em "lugar confortável"</p>
-    <h3>Comida</h3>
-    <p>Pão, maçã, pera, ameixa recuperam 1 de vida (máximo 4 por dia)</p>
-    <p>Ovo, queijo recuperam 2 de vida (máximo 4 por dia)</p>
-    <p>Carne seca, peixe seco, sopa recuperam 3 de vida (máximo 6 por dia)</p>
-    <p><strong>Nota:</strong> os alimentos podem curar o máximo de 8 pontos de vida por dia</p>
-
-    <h2 id="Armas"><a href="#sumario">Armas e Armaduras</a></h2>
-    <h3>Armaduras</h3>
-    <table border="1">
-        <tr>
-            <th>Armadura</th> <th>Efeito</th>
-        </tr>
-        <tr>
-            <td>Armadura de couro</td> <td>Absorve 1 de dano</td>
-        </tr>
-        <tr>
-            <td>Armadura de couro reforçado</td> <td>Absorve 2 de dano</td>
-        </tr>
-        <tr>
-            <td>Armadura de cota de malha</td> <td>Absorve 3 de dano</td>
-        </tr>
-    </table>
-    <p><strong>Nota:</strong> Armas secundárias não acumulam bônus</p>
-    <p><strong>Nota:</strong> Quando vc está usando duas armas poderá escolher entre: ataque duplo ou ataque controlado. Ataque Duplo: some metade do dado da arma secundária ao dano; Ataque Coordenado: receba +2 para vencer a defesa ativa</p>
-    <h3>Adagas</h3>
-    <table border="1">
-        <tr>
-            <th>Adaga</th> <th>dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser secundária?</th> <th>Pode ser arremessada?</th>
-        </tr>
-        <tr>
-            <td>Faca</td> <td>d4</td> <td>+ 1 de defesa passiva + 1 de iniciativa</td> <td>Uma mão</td> <td>sim</td> <td>sim</td>
-        </tr>
-        <tr>
-            <td>Punhal</td> <td>d6</td> <td>+ 1 de defesa passiva + 1 de iniciativa</td> <td>Uma mão</td> <td>sim</td> <td>sim</td>
-        </tr>
-        <tr>
-            <td>Adaga</td> <td>d8</td> <td>+ 1 de defesa passiva + 1 de iniciativa</td> <td>Uma mão</td> <td>sim</td> <td>sim</td>
-        </tr>
-        <tr>
-            <td>Adaga nobre</td> <td>d10</td> <td>+ 1 de defesa passiva + 1 de iniciativa</td> <td>Uma mão</td> <td>sim</td> <td>sim</td>
-        </tr>
-    </table>
-
-    <h3>Espadas</h3>
-    <table border="1">
-        <tr>
-            <th>Espada</th> <th>Dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser arma secundária?</th> <th>Pode ser arremessada?</th>
-        </tr>
-        <tr>
-            <td>Espada curta</td> <td>d8</td> <td>+ 1 contra defesa passiva + 1 de iniciativa</td> <td>Uma mão</td> <td>Sim</td> <td>Não</td>
-        </tr>
-        <tr>
-            <td>Espada mal forjada</td> <td>d10</td> <td>nenhum</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
-        </tr>
-         <tr>
-            <td>Espada franca</td> <td>d12</td> <td>nenhum</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
-        </tr>
-         <tr>
-            <td>Espada nobre</td> <td>d14</td> <td>nenhum</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
-        </tr>
-         <tr>
-            <td>Espada de duas mãos</td> <td>d16</td> <td>+ 2 de dano - 1 de iniciativa</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
-        </tr>
-    </table>
-
-    <h3>Lanças</h3>
-    <table border="1">
-        <tr>
-            <th>Lança</th> <th>Dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser arma secundária?</th> <th>Pode ser arremessada?</th>
-        </tr>
-        <tr>
-            <td>Lança curta</td> <td>d10</td> <td>+ 2 de iniciativa</td> <td>Uma mão</td> <td>Não</td> <td>Sim (-2 de dano)</td>
-        </tr>
-         <tr>
-            <td>Lança de guerra</td> <td>d12</td> <td>+ 3 de iniciativa, usada com escudo: dano normal. Usada com as duas mãos: +1 de dano</td> <td>Ambas</td> <td>Não</td> <td>Sim (-2 de dano)</td>
-        </tr>
-        <tr>
-            <td>Lança longa</td> <td>d14</td> <td>+ 4 de iniciativa; -3 de iniciativa em locais fechados</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
-        </tr>
-    </table>
-
-    <h3>Machados</h3>
-    <table border="1">
-        <tr>
-            <th>Machado</th> <th>Dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser arma secundária?</th> <th>Pode ser arremessada?</th>
-        </tr>
-        <tr>
-            <td>Machado de lenhador</td> <td>d6</td> <td>+1 de dano</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
-        </tr>
-        <tr>
-            <td>Machado pequeno</td> <td>d8</td> <td>+1 de dano +1 de iniciativa</td> <td>Uma mão</td> <td>Sim</td> <td>Sim (-2 de dano)</td>
-        </tr>
-        <tr>
-            <td>Machado médio</td> <td>d10</td> <td>+1 de dano</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
-        </tr>
-        <tr>
-            <td>Machado de guerra</td> <td>d12</td> <td>+1 de dano</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
-        </tr>
-        <tr>
-            <td>Machado de duas mãos</td> <td>d14</td> <td>+2 de dano, -1 de iniciativa</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
-        </tr>
-    </table>
-
-    <h3>Martelos</h3>
-    <table border="1">
-        <tr>
-            <th>Martelo</th> <th>Dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser arma secundária?</th> <th>Pode ser arremessada?</th>
-        </tr>
-        <tr>
-            <td>Martelo de ferreiro</td> <td>d4</td> <td>ignora 1 de absorção, +1 em atordoar</td> <td>uma mão</td> <td>Não</td> <td>Não</td>
-        </tr>
-        <tr>
-            <td>Martelo leve</td> <td>d6</td> <td>ignora 1 de absorção, +2 em atordoar</td> <td>uma mão</td> <td>Não</td> <td>Não</td>
-        </tr>
-        <tr>
-            <td>Martelo militar</td> <td>d8</td> <td>ignora 1 de absorção, +3 em atordoar</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
-        </tr>
-        <tr>
-            <td>Malho</td> <td>d10</td> <td>+2 dano, ignora 1 de absorção, -1 iniciativa, +3 em atordoar</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
-        </tr>
-    </table>
-
-    <h3>Bastões</h3>
-    <table border="1">
-        <tr>
-            <th>Bastão</th> <th>Dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser arma secundária?</th> <th>Pode ser arremessada?</th>
-        </tr>
-        <tr>
-            <td>Bastão leve</td> <td>d4</td> <td>+1 defesa ativa, +1 em atordoar</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
-        </tr>
-         <tr>
-            <td>Bordão</td> <td>d6</td> <td>+1 defesa ativa, +2 em atordoar</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
-        </tr>
-    </table>
-
-    <h3>Arcos</h3>
-    <table border="1">
-        <tr>
-            <th>Arco</th> <th>Dado de dano</th> <th>Mãos</th> <th>Distâncias</th> <th>Penalidade curta</th> <th>Penalidade média</th> <th>Penalidade longa</th>
-        </tr>
-        <tr>
-            <td>Arco simples</td> <td>d6</td> <td>Duas mãos</td> <td>Distâncias: curta: 20 metros; Média: 40 metros; Longa: 60 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
-        </tr>
-         <tr>
-            <td>Arco de caça</td> <td>d8</td> <td>Duas mãos</td> <td>Distâncias: curta: 25 metros; Média: 50 metros; Longa: 75 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
-        </tr>
-         <tr>
-            <td>Arco de guerra</td> <td>d10</td> <td>Duas mãos</td> <td>Distâncias: curta: 30 metros; Média: 60 metros; Longa: 90 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
-        </tr>
-         <tr>
-            <td>Arco de mestre</td> <td>d12</td> <td>Duas mãos</td> <td>Distâncias: curta: 35 metros; Média: 70 metros; Longa: 110 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
-        </tr>
-    </table>
-
-    <p><strong>Nota:</strong> Arcos usam bônus de destreza para acertar e bônus de força para o dano</p>
-    <p><strong>Nota:</strong>Arcos geralmente vencem em iniciativa</p>
-
-    <h3>Bestas</h3>
-    <table border="1">
-         <tr>
-            <th>Besta</th> <th>Dado de dano</th> <th>Mãos</th> <th>Distâncias</th> <th>Penalidade curta</th> <th>Penalidade média</th> <th>Penalidade longa</th>
-        </tr>
-        <tr>
-            <td>Besta comum</td> <td>d12</td> <td>Duas mãos</td> <td>Distâncias: curta: 25 metros; Média: 50 metros; Longa: 75 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
-        </tr>
-        <tr>
-            <td>Besta refinada</td> <td>d14</td> <td>Duas mãos</td> <td>Distâncias: curta: 30 metros; Média: 60 metros; Longa: 90 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
-        </tr>
-        <tr>
-            <td>Besta aperfeiçoada</td> <td>d16</td> <td>Duas mãos</td> <td>Distâncias: curta: 35 metros; Média: 70 metros; Longa: 100 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
-        </tr>
+        <h3>Profissão</h3>
+        <p>Os personagens podem escolher uma antiga função que desempenhavam. Podem ser, mas não se limitando a: andarilho, camponês, médico, caçador, aprendiz de soldado, ladrão, bardo, mensageiro, mercador, ferreiro, noviço, artesão, pastor, mercenário novato, lenhador, pescador, moleiro, cozinheiro, escudeiro, guarda da cidade, marinheiro, pedreiro, minerador, caçador de recompensas, falcoeiro, estalajadeiro, escriba, taverneiro, batedor, etc.</p>
+        <h4>vantagens das profissôes</h4>
+        <p>mercador = +3 slots para coisas se usar uma mochila e +1 para todas as rolagens que envolvam comércio. (mínimo 2 em carisma e inteligência)</p>
+        <p>andarilho = consegue ter um bom descanso em qualquer lugar</p>
+        <p>noviço = sabe ler e escrever nas línguas vernácula e latim, sabe fazer poções de cura e remédios, (respeitando as regras de atributos encontradas em Poções), +2 para encontrar ingredientes naturais(mínimo 3 em inteligência e 2 em sabedoria)</p>
+        <p>Ferreiro = consegue melhorar armas para que elas deem + 1 de dano (Cada arma só pode ser melhorada uma vez)(mínimo 5 constituição, 2 em inteligência e 1 em sabedoria)</p>
+        <p>Pastor = tem um cachorro com 8 de vida e d6 de dano, +1 para encontrar ingredientes naturais (mínimo 1 em sabedoria e inteligência)</p>
+        <p>Aprendiz de soldado = + 1 em defesa ativa (mínimo 2 em destreza e força)</p>
+        <p>Mercenário novato = + 1 em atacando defesa ativa (mínimo 2 em destreza e força)</p>
+        <p>Caçador = +4 para rastrear animais em terras selvagens (florestas, campos e montanhas), +2 para rastrear pessoas em terras selvagens e para encontrar ingredientes naturais(mínimo 2 em destreza, inteligência e sabedoria)</p>
+        <p>Médico = +4 para estancar ferimentos, +2 para cuidar de doenças e envenenamentos e sabe fazer poções  (respeitando as regras de atributos encontradas em Poções) (mínimo 3 em inteligência e sabedoria)</p>
+        <p>Ladrão = +2 para furtos e arrombamentos, +2 em furtividade em cidade. +1 em furtividade em ambientes naturais (mínimo 2 em destreza e 1 em sabedoria)</p>
+        <p>Bardo = +2 em convencimento e disfarce, sabe tocar um instrumento (mínimo 3 em destreza e carisma)</p>
+        <p>Contrabandista = +2 em negociação de mercadorias ilegais e para esconder objetos durante revistas ou inspeções (mínimo 2 em destreza, inteligência e carisma)</p>
+        <p>Mensageiro = +2 para encontrar riachos, +1 para encontrar árvores frutíferas. Consegue percorrer 5 km adicionais por dia de viagem (mínimo 1 em sabedoria e inteligência)</p>
+        <p>Campônes = +2 para encontrar árvores frutíferas e riachos, +1 em agricultura, +2 para encontrar ingredientes naturais (mínimo 5 em constituição e 1 em sabedoria e inteligência)</p>
+        <p>Artesão = Consegue fabricar equipamentos e objetos para venda (mínimo 3 em inteligência e 2 em destreza)</p>
+        <p>Lenhador = derruba árvores e abre caminho mais rápido. Consegue produzir lenha suficiente para um acampamento durante dois descanços, +1 para encontrar ingredientes naturais, +2 para tirar casca de salgueiro (mínimo 2 em força e destreza)</p>
+        <p>Pescador = +4 para pesca. +2 para navegar pequenas embarcações (mínimo 2 em sabedoria e inteligência e 1 em destreza)</p>
+        <p>Moleiro = reconhece grãos de boa qualidade. +2 para avaliar alimentos e detectar grãos estragados (mínimo 2 em sabedoria e inteligência)</p>
+        <p>Cozinheiro = durante descansos pode fazer refeições que recuperam +1 ponto de vida (mínimo 1 em inteligência e sabedoria)</p>
+        <p>Escudeiro = +1 de iniciativa. Concede +1 em defesa ativa para um aliado por turno (mínimo 1 em força, destreza, inteligência e sabedoria)</p>
+        <p>Guarda da cidade = +2 para perceber comportamentos suspeitos. +2 em intimidação contra criminosos (mínimo 2 em carisma e 1 em sabedoria, inteligência, força e destreza)</p>
+        <p>Marinheiro = +2 em testes envolvendo barcos. Nunca sofre penalidades por enjoo durante viagens de barco (mínimo 5 em constituição e 1 em sabedoria, inteligência e destreza)</p>
+        <p>Pedreiro = Consegue improvisar pequenas fortificações (mínimo 2 em força, sabedoria e inteligência)</p>
+        <p>Minerador = +2 para encontrar veios de pedra e minério. Reconhece metais comuns (mínimo 5 em constituição, 2 em força e 1 em inteligência e sabedoria)</p>
+        <p>Caçador de recompenças = +2 para rastrear fugitivos. +1 em intimidação (mínimo 1 em força, inteligência, sabedoria, destreza e carisma)</p>
+        <p>Falcoeiro = Possui um falcão treinado com 6 de vida e d4 de dano. O falcão pode localizar presas pequenas ou transmitir sinais visuais a curta distância (mínimo 3 em sabedoria e 2 em inteligência)</p>
+        <p>Estalajadeiro = +2 em negociação. Sempre sabe obter rumores em tavernas e hospedarias (mínimo 3 em carisma e 1 em inteligência)</p>
+        <p>Escriba = sabe ler e escrever em língua vernácula. +2 para copiar documentos sem erros. Reconhece selos e documentos falsificados (mínimo 3 em inteligência e 2 em destreza)</p>
+        <p>Taverneiro = +2 em convencer pessoas embriagadas. Sempre consegue descobrir rumores locais após algum tempo em uma taverna (mínimo 5 em constituição, 3 em carisma e 1 em inteligência e sabedoria)</p>
+        <p>Batedor = +2 para rastrear pessoas. +1 para rastrear animais +2 em furtividade em ambientes naturais. O grupo não pode ser surpreendido por emboscadas enquanto ele estiver na frente da marcha, exceto por criaturas ou inimigos excepcionalmente furtivos (mínimo 4 em destreza, 3 em sabedoria e 1 em inteligência)</p>
+        <h4>Exemplicando algumas profissôes</h4>
+        <p>Cozinheiro = um pão com ovo daria +3 de vida, se feito por um cozinheiro isso vai para +4. O cozinheiro pode aumentar o limite de cura total dos alimentos para 9</p>
+        <h4>Inicio dos personagens</h4>
+        <p><strong>Nota:</strong> Todo personagem pode escolher começar com 10 denários + 1d6, uma túnica, uma calça, um cinto e um par de botas</p>
+        <p>Mercador = 5 denários + 1d6, uma mochila, uma túnica, uma calça, um cinto, um par de luvas e um par de botas</p>
+        <p>Andarilho = 3 denários + 1d6, um bastão</p>
         
-    </table>
+        <h3>Perícias e Vantagens</h3>
+        <p>Cada personagem tem dois pontos para pegar vantagens e perícias</p>
+        <p>reflexo aprimorado = +1 em iniciativa (1 ponto)</p>
+        <p>Esguio = +1 de defesa passiva (1 ponto)</p>
+        <p>Silêncioso = +1 em furtividade (1 ponto)</p>
+        <p>Canhoto = +1 atacando defesa ativa (1 ponto)</p>
+        <p>Olhos de águia = +1 atacando defesa passiva (1 ponto)</p>
+        <p>Observador = +2 para perceber armadilhas, pistas e emboscadas (1 ponto)</p>
+        <p>Resistente = +2 para resistir a doenças e venenos (1 ponto)</p>
+        <p>Montador = +2 em testes envolvendo cavalos (1 ponto)</p>
+        <p>Pé leve = Ignora terreno difícil causado por lama, neve rasa ou vegetação densa (1 ponto)</p>
+        <p>Corajoso = +2 contra intimidação e medo (1 ponto)</p>
+        <p>Combatente defensivo = +1 em defesa ativa (1 ponto)</p>
+        <p>Golpe preciso = Uma vez por combate, pode repetir a rolagem de dano(1 ponto)</p>
+        <p>Mão firme = ignora a penalidade por atacar após andar no mesmo turno com armas à distância (1 ponto)</p>
+        <p>Herborista = +2 para encontrar ervas, raízes, cogumelos e outros ingredientes alquímicos na natureza (1 ponto)</p>
+        <p>Alquimista = sabe fazer poções (respeitando as regras de atributos encontradas em Poções)</p>
+        <p>Rastreador = +2 para seguir rastros de pessoas ou animais (1 ponto)</p>
+        <p>Escalador = +2 para subir árvores, muralhas e penhascos (1 ponto)</p>
+        <p>Nadador = +2 para nadar (1 ponto)</p>
+        <p>Montanhista = anda em terrenos rochosos ou montanhosos como se andasse por uma estrada não tão boa em viagem (25km por dia) (1 ponto)</p>
+        <p>Estõmago forte = Não sofre penalidades por comer alimentos de baixa qualidade (1 ponto)</p>
+        <p>Dorminhoco experiente = Recupera-se normalmente mesmo dormindo ao relento (1 ponto)</p>
+        <p>Memória excelente = +2 para lembrar nomes, lugares e acontecimentos (1 ponto)</p>
+        <p>Língua afiada = +2 para blefes e mentiras (1 ponto)</p>
+        <p>Voz imponente = +2 em intimidação (1 ponto)</p>
+        <p>Negociador = +1 em qualquer compra ou venda (1 ponto)</p>
+        <p>Bonito = +2 em toda rolagem de convencimento para npcs do sexo oposto (1 ponto)</p>
+        <p>Diplomata = +2 em negociação e mediação de conflitos (2 pontos)</p>
+        <p>Boa reputação = Começa a campanha conhecido positivamente no condado natal (1 ponto)</p>
+        <p>Pele grossa = +1 em absorver dano (2 pontos)</p>
+        <p>Letrado = sabe ler e escrever em língua vernácula (1 ponto)</p>
+        <p>Letrado II = sabe ler e escrever em língua vernácula e em latim (2 pontos)</p>
+        <p>Fiel companheiro = tem um cachorro com 8 de vida e d6 de dano (2 pontos)</p>
+        <p>Casca-grossa = Na primeira vez que chegaria a 0 PV em um combate, permanece com 1 PV (1 ponto)</p>
+        <p>Veterano = +1 em iniciativa e +1 em testes de medo (2 pontos)</p>
+        <p>Mente fria = no começo combate, pode escolher agir por último na iniciativa e receber +2 em sua defesa ativa por 2 turnos (2 pontos)</p>
+        <h3>As maestrias podem ser escolhidas no nível 3</h3>
+        <p>Maestria com espadas = pode rolar dois d20 para o acerto e pegar o maior</p>
+        <p>Maestria com adagas = pode rolar dois d20 para o acerto e pegar o maior</p>
+        <p>Maestria com machados = pode rolar dois d20 para o acerto e pegar o maior</p>
+        <p>Maestria com lanças = pode rolar dois d20 para o acerto e pegar o maior</p>
+        <p>Maestria com bastões = pode rolar dois d20 para o acerto e pegar o maior</p>
+        <p>Maestria com martelos = pode rolar dois d20 para o acerto e pegar o maior</p>
+        <p>Maestria com arcos = pode rolar dois d20 para o acerto e pegar o maior</p>
+        <p>Maestria com bestas = pode rolar dois d20 para o acerto e pegar o maior</p>
+        <p>Maestria com poções = pode rolar dois dados de efeito de poções e pegar o maior</p>
+    </section>
 
-    <p><strong>Nota:</strong> Bestas precisam de um turno para recarregar</p>
-    <p><strong>Nota:</strong> Bestas usam bônus de destreza para acertar e bônus de força para o dano</p>
-    <p><strong>Nota:</strong>Penalidades das distâncias de bestas: curta: sem penalidade; média: -2 em acertar; longa: -4 em acertar</p>
-    <h3>Escudos</h3>
-    <table border="1">
-        <tr>
-            <th>Escudo</th> <th>Efeito</th> <th>Mãos</th>
-        </tr>
-        <tr>
-            <td>Bloquel</td> <td>Nenhum</td> <td>Uma mão</td>
-        </tr>
-        <tr>
-            <td>Escudo redondo</td> <td>+1 de defesa ativa</td> <td>Uma mão</td>
-        </tr>
-        <tr>
-            <td>Escudo oval</td> <td>+2 de defesa ativa -1 de defesa passiva</td> <td>Uma mão</td>
-        </tr>
-    </table>
+    <section class="vida">
+        <h2 id="Vida"><a href="#sumario"> Vida</a></h2>
+        <h3>0 de Vida</h3>
+        <p>Caso um personagem chegue a 0 de vida, ele fica inconsciente e o jogador rola um d3. O resultado do d3 vai ser a diminuição da constituição do personagem por turno, se a constituição chgar a 0 o personagem morre. Para estancar a perda de constituição um outro personagem precisará passar por um teste de sabedoria ou inteligência</p>
+        <h3>Descanso</h3>
+        <p>Descanso longo = Descansar em cama ou descansar em um lugar confortável e seguro por 8 horas recupera metade da vida</p>
+        <p>Descanso medio = Descansar em cama ou descansar em um lugar confortável e seguro por 4 horas, ou em qualquer outro lugar por 8 horas recupera metade da metade da vida</p>
+        <p>Descanso curto = descansar por 1 hora em qualquer lugar recupera 1 de vida, só funciona 4 vezes por dia</p>
+        <p>Usar manto ou cobertor em qualquer lugar durante um descanso logo ou médio recupera +1 de vida</p>
+        <p>Uma tenda pequena combinada com uma fogueira e um cobertor ou um manto, se encaixa em "lugar confortável"</p>
+        <h3>Comida</h3>
+        <p>Pão, maçã, pera, ameixa recuperam 1 de vida (máximo 4 por dia)</p>
+        <p>Ovo, queijo recuperam 2 de vida (máximo 4 por dia)</p>
+        <p>Carne seca, peixe seco, sopa recuperam 3 de vida (máximo 6 por dia)</p>
+        <p><strong>Nota:</strong> os alimentos podem curar o máximo de 8 pontos de vida por dia</p>
+    </section>
 
-    <h2 id="Combate"><a href="#sumario">Combate</a></h2>
-    <p>O combate tem basicamente 4 etapas: Iniciativa; Acertando/Defesa passiva; Vencendo defesa/Defesa ativa; Dano infligido/Absorvido</p>
-    <h3>Termos</h3>
-    <p><strong>Iniciativa:</strong> Se refere a quem vai atacar primeiro. Todos os envolvidos rolam um d20 + bônus de destreza e outros, quem tirar mais pontos começa atacando. Isso pode mudar dependendo do contexto, como emboscadas, por exemplo</p>
-    <p><strong>Acertando:</strong> É quando o atacante tenta passar da defesa passiva do oponente. Para isso o atacante rola um d20 + bônus</p>
-    <p><strong>Defesa passiva</strong> Se refere a chance do atacante errar e do defensor desviar. O defensor não rola dado para saber sua defesa passiva, ele tem 10 de padrão + bônus de destreza</p>
-    <p><strong>Vencendo a defesa:</strong> Quando o atacante passa a defesa passiva ele deve vencer a defesa ativa. Para isso ele não rola dado, usa o mesmo número tirado em "acertando" + bônus</p>
-    <p><strong>Defesa Ativa:</strong> Aqui o defensor rola um dado d20 para tentar se defender do ataque</p>
-    <p><strong>Dano infligido:</strong> Quando o atacante passa das duas defesas, ele rola o dado do dano de sua arma + bônus de força</p>
-    <p><strong>Dano absorvido</strong> Existem coisas que o defensor pode usar para absorver uma parte do dano infligido. Nesse caso ele faz a conta: dano infligido - dano absorvido = dano recebido</p>
-    <p><strong>Nota:</strong> Todo o ataque que passa das duas defesas inflige dano. Se o defensor consegue absorver todo o dano que o atacante tirou no dado, o defensor é ferido com 1 de dano</p>
-    <h3>Tempo do turno de combate</h3>
-    <p>Cada turno de combate dura 6 segundos do tempo do jogo, não da vida real</p>
-    <h3>Acertando e Defendendo</h3>
-    <h4>Acertando, errando/esquivando</h4>
-    <p>Para acertar o alvo o atacante joga um dado de vinte lados, 11 pra cima ele acerta, 10 pra baixo ele erra. Na maioria das vezes o atacante pode escolher se soma o bônus de força ou destreza. O defensor só pode somar destreza, o defensor não irá jogar um dado nesse momento, ele vai somar a destreza com a defesa padrão (10). Se o ataque superar a defesa nessa primeira parte, o defensor ainda pode se defender dependendo dos equipamentos</p>
-    <h4>Acertando/Defendendo</h4>
-    <p>Se o defensor tiver um escudo rolará um dado de vinte lados e vai somar o resultado com o bônus do seu menor atributo entre força e destreza. Se o resultado for maior que o resultado do atacante, o defensor consegue defender. Se for menor, o atacante acerta. Se for o mesmo número, o atacante acerta, mas o defensor só recebe metade do dano</p>
-    <p>Se o defensor não têm um escudo, mas tem uma arma de porte médio ou grande rolará um dado de vinte lados e vai somar o resultado com o bônus do seu menor atributo entre força e destreza. Se o resultado for 3 pontos maior que o resultado do atacante, o defensor consegue defender. Se for 1 ponto maior, o atacante acerta. Se for 2 pontos maior, o atacante acerta, mas o defensor só recebe metade do dano</p>
-    <p>Se o defensor não têm um escudo, mas tem uma arma de porte pequeno rolará um dado de vinte lados e vai somar o resultado com o bônus do seu menor atributo entre força e destreza. Se o resultado for 5 pontos maior que o resultado do atacante, o defensor consegue defender. Se for 3 pontos maior, o atacante acerta. Se for 4 pontos maior, o atacante acerta, mas o defensor só recebe metade do dano</p>
-    <h4>Dano recebido/absorvido</h4>
-    <p>Se o atacante conseguir passar pelas defesas (passiva e ativa) do defensor, ele vai rolar o dado para decidir o dano causado. Se o defensor tiver armadura, essa absorve um pouco de dano (cada armadura absorve um dano já definido)</p>
-    <h3>Bônus de diferença de ataque x defesa</h3>
-    <p>Se o atacante acerta e o defensor não consegue defender, pega o número que o defensor precisaria ter tirado para bloquear o golpe e subtrai o que ele tirou, o resultado é dividido por 4 e o resultado da divisão é o bônus de dano para o atacante. Esse bônus não pode ultapassar o dano máximo da arma. Ex: o atacante com uma espada d12 tira 17 e o defensor com um bloquel tira 5. para se defender, o defensor teria que ter tirado 18. 18 menos 5 = 13. 13 dividido por 4 = 3 (sempre arredonda para baixo). O atacante rola o dado de dano, que no caso é 12, e tira 10. Ele soma o 10 + o bônus de diferença de ataque defesa, que é 3. Fica 13, mas a arma é um d12, então fica 12 de dano. Então ele pode colocar seus outros bônus (se tiver), como o de força... . Esses podem superar o dano máximo da arma</p>
-    <h3>Ataque Crítico (20 no dado)</h3>
-    <p>Se o ataque passar o atacante vai rolar o dado da arma + o dado da metade do dado da arma. (um pouco confuso, qualquer coisa pergunta)</p>
-    <h3>Ataque forte</h3>
-    <p>Antes de atacar, o jogador pode declarar que vai fazer um ataque forte. Vai ser mais difícil acertar (-2 Acertando), mas se passar ele ganha + 2 de dano, se ele estiver com arma de duas mãos +3 de dano.</p>
-    <h3>Atordoar</h3>
-    <p>Antes de atacar, o jogador pode declarar que vai tentar atordoar o oponente. Vai ser mais difícil acertar (+5 para a defesa passiva do inimigo). Se o ataque passar, o jogador rola o dano contra a constituição que o oponente ainda tem, se chegar a 0 o oponente desmaia</p>
+        <section class="armas tabelasAlinhada">
+            <section>
+            <h2 id="Armas"><a href="#sumario">Armas e Armaduras</a></h2>
+            </section>
 
-    <h2 id="Animais"><a href="#sumario">Animais</a></h2>
-    <p>Lobos</p>
-    <p>Pontos de vida: 12; força 4; destreza 6; constituição 6; inteligência 4; sabedoria 6; carisma 3; Ataque d8. +2 defesa passiva</p>
-    <p>Se houver mais um lobo perto: +1 acertando +1 dano</p>
-    <p>Ursos</p>
-    <p>Pontos de vida: 22; força 8; destreza 3; constituição 11; inteligência 2; sabedoria 4; carisma 2; Ataque d12</p>
-    <p>Se ele ultrapassar a defesa por 5 ou mais, derruba o alvo</p>
-    <p>Javalis</p>
-    <p>Pontos de vida: 16; força 7; destreza 4; constituição 9; inteligência 2; sabedoria 4; carisma 3; Ataque d10</p>
-    <p>Se correr antes do ataque: +2 vencendo defesa ativa +2 dano (mínimo 10 metros)</p>
-    <p>Linces</p>
-    <p>Pontos de vida: 8; força 3; destreza 8; constituição 4; inteligência 3; sabedoria 6; carisma 2; Ataque d8. +3 defesa passiva</p>
-    <p>Se ele atacar sem ser visto +3 de dano</p>
-    <p>Cães selvagens</p>
-    <p>Pontos de vida: 10; força 4; destreza 6; constituição 5; inteligência 4; sabedoria 5; carisma 4; Ataque d8. +1 defesa passiva</p>
-    <p>Alces</p>
-    <p>Pontos de vida: 24; força 8; destreza 5; constituição 12; inteligência 2; sabedoria 4; carisma 2; Ataque d10</p>
-    <p>Cervos</p>
-    <p>Pontos de vida: 12; força 3; destreza 8; constituição 12; inteligência 2; sabedoria 6; carisma 2; Ataque d4. +2 defesa passiva</p>
-    <p>Auroque</p>
-    <p>Pontos de vida: 30; força 8; destreza 3; constituição 15; inteligência 2; sabedoria 4; carisma 2; Ataque d12</p>
-    <p>Se ele correr +4 de dano (mínimo 10 metros)</p>
-    <p>Cobras</p>
-    <p>Pontos de vida: 6; força 2; destreza 8; constituição 3; inteligência 1; sabedoria 6; carisma 1; Ataque d4. +1 defesa passiva</p>
-    <p>Algumas tem veneno que tiram d3 de pontos de vida por dia até a vitíma tomar um antídoto</p>
-    <p>Texugo</p>
-    <p>>Pontos de vida: 8; força 3; destreza 4; constituição 4; inteligência 2; sabedoria 4; carisma 2; Ataque d8</p>
-    <p>Se ele morder alguém, o jogador deve passar por um teste de constituição, se falhar sofre -1 em acertando no próximo ataque</p>
-    <p>Alce</p>
-    <p>>Pontos de vida: 18; força 6; destreza 4; constituição 9; inteligência 2; sabedoria 4; carisma 2; Ataque d6</p>
-    <p>Se ele correr +4 de dano (mínimo 10 metros)</p>
-    <p>Mula</p>
-    <p>>Pontos de vida: 20; força 6; destreza 4; constituição 10; inteligência 3; sabedoria 4; carisma 3; Ataque d6</p>
-    <p>Cavalo comum</p>
-    <p>Pontos de vida: 18; força 7; destreza 6; constituição 9; inteligência 3; sabedoria 5; carisma 5; Ataque d8</p>
-    <p>Cavalo de Guerra (Destrier)</p>
-    <p>Pontos de vida: 22; força 8; destreza 6; constituição 11; inteligência 3; sabedoria 6; carisma 6; Ataque d10</p>
-    <h3>Montaria</h3>
-    <p>enquanto montado, o personagem dobra a distância percorrida por dia. Se o cavalo correr pelo menos 10 metros antes de um ataque corpo a corpo, o cavaleiro recebe +2 de dano no primeiro ataque da rodada. Se o cavalo sofrer dano enquanto estiver em movimento, o cavaleiro deve passar em um teste de Destreza para não cair</p>
+            <section>
+                <h3>Armaduras</h3>
+                <table class="tabela" border="1">
+                    <tr>
+                        <th>Armadura</th> <th>Efeito</th>
+                    </tr>
+                    <tr>
+                        <td>Armadura de couro</td> <td>Absorve 1 de dano</td>
+                    </tr>
+                    <tr>
+                        <td>Armadura de couro reforçado</td> <td>Absorve 2 de dano</td>
+                    </tr>
+                    <tr>
+                        <td>Armadura de cota de malha</td> <td>Absorve 3 de dano</td>
+                    </tr>
+                </table>
+                <p><strong>Nota:</strong> Armas secundárias não acumulam bônus</p>
+                <p><strong>Nota:</strong> Quando vc está usando duas armas poderá escolher entre: ataque duplo ou ataque controlado. Ataque Duplo: some metade do dado da arma secundária ao dano; Ataque Coordenado: receba +2 para vencer a defesa ativa</p>
+            </section>
 
-    <h2 id="Economia"><a href="#sumario">Economia</a></h2>
-    <p>1 libra de prata equivale 240 denários</p>
-    <p>1 solidus equivale a 12 denários</p>
-    <p>1 denário equivale a 10 óbolos</p>
-    <p>1 Óbolo equivale a 1 pão</p>
+            <section>
+                <h3>Adagas</h3>
+                <table class="tabela" border="1">
+                    <tr>
+                        <th>Adaga</th> <th>dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser secundária?</th> <th>Pode ser arremessada?</th>
+                    </tr>
+                    <tr>
+                        <td>Faca</td> <td>d4</td> <td>+ 1 de defesa passiva + 1 de iniciativa</td> <td>Uma mão</td> <td>sim</td> <td>sim</td>
+                    </tr>
+                    <tr>
+                        <td>Punhal</td> <td>d6</td> <td>+ 1 de defesa passiva + 1 de iniciativa</td> <td>Uma mão</td> <td>sim</td> <td>sim</td>
+                    </tr>
+                    <tr>
+                        <td>Adaga</td> <td>d8</td> <td>+ 1 de defesa passiva + 1 de iniciativa</td> <td>Uma mão</td> <td>sim</td> <td>sim</td>
+                    </tr>
+                    <tr>
+                        <td>Adaga nobre</td> <td>d10</td> <td>+ 1 de defesa passiva + 1 de iniciativa</td> <td>Uma mão</td> <td>sim</td> <td>sim</td>
+                    </tr>
+                </table>
+            </section>
 
-    <h3>Preço e peso das coisas</h3>
+            <section>
+                <h3>Espadas</h3>
+                <table class="tabela" border="1">
+                    <tr>
+                        <th>Espada</th> <th>Dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser arma secundária?</th> <th>Pode ser arremessada?</th>
+                    </tr>
+                    <tr>
+                        <td>Espada curta</td> <td>d8</td> <td>+ 1 contra defesa passiva + 1 de iniciativa</td> <td>Uma mão</td> <td>Sim</td> <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Espada mal forjada</td> <td>d10</td> <td>nenhum</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Espada franca</td> <td>d12</td> <td>nenhum</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Espada nobre</td> <td>d14</td> <td>nenhum</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Espada de duas mãos</td> <td>d16</td> <td>+ 2 de dano - 1 de iniciativa</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                </table>
 
-    <h4>Comidas</h4>
-    <table border="1">
-        <tr>
-            <th>Comida</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Pão</td> <td>1 óbolo</td> <td>1/10 slot</td>
-        </tr>
-        <tr>
-            <td>Maçã</td> <td>1 óbolo</td> <td>1/10 slot</td>
-        </tr>
-        <tr>
-            <td>Pera</td> <td>1 óbolo</td> <td>1/10 slot</td>
-        </tr>
-         <tr>
-            <td>Ameixa</td> <td>1 óbolo</td> <td>1/10 slot</td>
-        </tr>
-         <tr>
-            <td>Cebola</td> <td>1 óbolo</td> <td>1/10 slot</td>
-        </tr>
-         <tr>
-            <td>Ovo</td> <td>2 óbolos</td> <td>1/10 slot</td>
-        </tr>
-         <tr>
-            <td>Queijo</td> <td>3 óbolos</td> <td>1/4 slot</td>
-        </tr>
-         <tr>
-            <td>Carne seca</td> <td>6 óbolos</td> <td>1/4 slot</td>
-        </tr>
-         <tr>
-            <td>Peixe seco</td> <td>6 óbolos</td> <td>1/4 slot</td>
-        </tr>
-         <tr>
-            <td>Saco de grãos</td> <td>18 denários</td> <td>2 slots</td>
-        </tr>
-         <tr>
-            <td>Refeição simples</td> <td>1 denário</td>
-        </tr>
-         <tr>
-            <td>Refeição farta</td> <td>3 denários</td>
-        </tr>
-    </table>
+                <h3>Lanças</h3>
+                <table class="tabela" border="1">
+                    <tr>
+                        <th>Lança</th> <th>Dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser arma secundária?</th> <th>Pode ser arremessada?</th>
+                    </tr>
+                    <tr>
+                        <td>Lança curta</td> <td>d10</td> <td>+ 2 de iniciativa</td> <td>Uma mão</td> <td>Não</td> <td>Sim (-2 de dano)</td>
+                    </tr>
+                    <tr>
+                        <td>Lança de guerra</td> <td>d12</td> <td>+ 3 de iniciativa, usada com escudo: dano normal. Usada com as duas mãos: +1 de dano</td> <td>Ambas</td> <td>Não</td> <td>Sim (-2 de dano)</td>
+                    </tr>
+                    <tr>
+                        <td>Lança longa</td> <td>d14</td> <td>+ 4 de iniciativa; -3 de iniciativa em locais fechados</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                </table>
+            </section>
 
-    <h4>Bebidas</h4>
-    <table border="1">
-        <tr>
-            <th>Bebida</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Garrafa de vinho comum</td> <td>4 denários</td> <td>1/2 slot</td>
-        </tr>
-        <tr>
-            <td>Garrafa de vinho nobre</td> <td>8 denários</td> <td>1/2 slot</td>
-        </tr>
-        <tr>
-            <td>Barril pequeno de cerveja</td> <td>8 denários</td> <td>2 slots</td>
-        </tr>
-        <tr>
-            <td>Caneca de cerveja</td> <td>2 óbolos</td>
-        </tr>
-        <tr>
-            <td>Caneca de vinho</td> <td>5 óbolos</td>
-        </tr>
+            <section>
+                <h3>Machados</h3>
+                <table class="tabela" border="1">
+                    <tr>
+                        <th>Machado</th> <th>Dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser arma secundária?</th> <th>Pode ser arremessada?</th>
+                    </tr>
+                    <tr>
+                        <td>Machado de lenhador</td> <td>d6</td> <td>+1 de dano</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Machado pequeno</td> <td>d8</td> <td>+1 de dano +1 de iniciativa</td> <td>Uma mão</td> <td>Sim</td> <td>Sim (-2 de dano)</td>
+                    </tr>
+                    <tr>
+                        <td>Machado médio</td> <td>d10</td> <td>+1 de dano</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Machado de guerra</td> <td>d12</td> <td>+1 de dano</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Machado de duas mãos</td> <td>d14</td> <td>+2 de dano, -1 de iniciativa</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                </table>
+            </section>
 
-    </table>
-    <p><strong>Nota:</strong> uma garrafa de vinho tem a quantidade para 10 canecas. Um barril de cerveja contém a quantidade para 50 canecas</p>
+            <section>
+                <h3>Martelos</h3>
+                <table class="tabela" border="1">
+                    <tr>
+                        <th>Martelo</th> <th>Dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser arma secundária?</th> <th>Pode ser arremessada?</th>
+                    </tr>
+                    <tr>
+                        <td>Martelo de ferreiro</td> <td>d4</td> <td>ignora 1 de absorção, +1 em atordoar</td> <td>uma mão</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Martelo leve</td> <td>d6</td> <td>ignora 1 de absorção, +2 em atordoar</td> <td>uma mão</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Martelo militar</td> <td>d8</td> <td>ignora 1 de absorção, +3 em atordoar</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Malho</td> <td>d10</td> <td>+2 dano, ignora 1 de absorção, -1 iniciativa, +3 em atordoar</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                </table>
+            </section>
 
-    <h4>Equipamentos</h4>
-    <table border="1">
-        <tr>
-            <th>Equipamento</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Agulha e linha</td> <td>1 denário</td> <td>1/10 slot</td>
-        </tr>
-        <tr>
-            <td>Bandagem</td> <td>1 óbolo</td> <td>1/10 slot</td>
-        </tr>
-        <tr>
-            <td>Bolsa</td> <td>2 denários</td> <td>1/2 slot</td>
-        </tr>
-        <tr>
-            <td>Caneca</td> <td>3 óbolos</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Cantil</td> <td>2 denários</td> <td>1/2 slot</td>
-        </tr>
-        <tr>
-            <td>Cobertor</td> <td>3 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Colher</td> <td>1 óbolo</td> <td>1/10 slot</td>
-        </tr>
-        <tr>
-            <td>Corda (10m)</td> <td>3 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Frasco para poções</td> <td>6 óbolos</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Lanterna</td> <td>8 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Machado de lenhador</td> <td> 6 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Manto</td> <td>6 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Martelo de ferreiro</td> <td>4 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Mochila</td> <td>5 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Pá</td> <td>5 denários</td> <td>2 slots</td>
-        </tr>
-        <tr>
-            <td>Pederneira</td> <td>1 denário</td> <td>1/10 slot</td>
-        </tr>
-        <tr>
-            <td>Picareta</td> <td>8 denários</td> <td>2 slots</td>
-        </tr>
-        <tr>
-            <td>Serra</td> <td>6 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Tenda pequena</td> <td>18 denários</td> <td>2 slots</td>
-        </tr>
-        <tr>
-            <td>Tigela de madeira</td> <td>3 óbolos</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Tocha</td> <td>5 óbolos</td> <td>1/2 slot</td>
-        </tr>
-        <tr>
-            <td>Vela</td> <td>2 óbolos</td> <td>1/10 slot</td>
-        </tr>
-    </table>
+            <section>
+            <h3>Bastões</h3>
+                <table class="tabela" border="1">
+                    <tr>
+                        <th>Bastão</th> <th>Dado de dano</th> <th>Efeitos</th> <th>Mãos</th> <th>Pode ser arma secundária?</th> <th>Pode ser arremessada?</th>
+                    </tr>
+                    <tr>
+                        <td>Bastão leve</td> <td>d4</td> <td>+1 defesa ativa, +1 em atordoar</td> <td>Uma mão</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Bordão</td> <td>d6</td> <td>+1 defesa ativa, +2 em atordoar</td> <td>Duas mãos</td> <td>Não</td> <td>Não</td>
+                    </tr>
+                </table>
+            </section>
 
-    <h4>Adagas</h4>
-    <table border="1">
-        <tr>
-            <th>Adaga</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Faca</td> <td>3 denários</td> <td>1/2 slot</td>
-        </tr>
-        <tr>
-            <td>Punhal</td> <td>8 denários</td> <td>1/2 slot</td>
-        </tr>
-        <tr>
-            <td>Adaga</td> <td>15 denários</td> <td>1/2 slot</td>
-        </tr>
-        <tr>
-            <td>Adaga nobre</td> <td>40 denários</td> <td>1/2 slot</td>
-        </tr>
-    </table>
+            <section>
+                <h3>Arcos</h3>
+                <table class="tabela" border="1">
+                    <tr>
+                        <th>Arco</th> <th>Dado de dano</th> <th>Mãos</th> <th>Distâncias</th> <th>Penalidade curta</th> <th>Penalidade média</th> <th>Penalidade longa</th>
+                    </tr>
+                    <tr>
+                        <td>Arco simples</td> <td>d6</td> <td>Duas mãos</td> <td>Distâncias: curta: 20 metros; Média: 40 metros; Longa: 60 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
+                    </tr>
+                    <tr>
+                        <td>Arco de caça</td> <td>d8</td> <td>Duas mãos</td> <td>Distâncias: curta: 25 metros; Média: 50 metros; Longa: 75 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
+                    </tr>
+                    <tr>
+                        <td>Arco de guerra</td> <td>d10</td> <td>Duas mãos</td> <td>Distâncias: curta: 30 metros; Média: 60 metros; Longa: 90 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
+                    </tr>
+                    <tr>
+                        <td>Arco de mestre</td> <td>d12</td> <td>Duas mãos</td> <td>Distâncias: curta: 35 metros; Média: 70 metros; Longa: 110 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
+                    </tr>
+                </table>
+                <p><strong>Nota:</strong> Arcos usam bônus de destreza para acertar e bônus de força para o dano</p>
+                <p><strong>Nota:</strong>Arcos geralmente vencem em iniciativa</p>
+            </section>
 
-    <h4>Espadas</h4>
-    <table border="1">
-        <tr>
-            <th>Espada</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Espada curta</td> <td>20 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Espada mal forjada</td> <td>35 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Espada franca</td> <td>60 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Espada nobre</td> <td>130 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Espada de duas mãos</td> <td>170 denários</td> <td>2 slots</td>
-        </tr>
-    </table>
+            <section>
+                <h3>Bestas</h3>
+                <table class="tabela" border="1">
+                    <tr>
+                        <th>Besta</th> <th>Dado de dano</th> <th>Mãos</th> <th>Distâncias</th> <th>Penalidade curta</th> <th>Penalidade média</th> <th>Penalidade longa</th>
+                    </tr>
+                    <tr>
+                        <td>Besta comum</td> <td>d12</td> <td>Duas mãos</td> <td>Distâncias: curta: 25 metros; Média: 50 metros; Longa: 75 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
+                    </tr>
+                    <tr>
+                        <td>Besta refinada</td> <td>d14</td> <td>Duas mãos</td> <td>Distâncias: curta: 30 metros; Média: 60 metros; Longa: 90 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
+                    </tr>
+                    <tr>
+                        <td>Besta aperfeiçoada</td> <td>d16</td> <td>Duas mãos</td> <td>Distâncias: curta: 35 metros; Média: 70 metros; Longa: 100 metros</td> <td>Sem penalidade</td> <td>-2 em acertar</td> <td>-4 em acertar</td>
+                    </tr>
+                    
+                </table>
 
-    <h4>Lanças</h4>
-    <table border="1">
-        <tr>
-            <th>Lança</th> <th>Preço</th> <th>1 slot</th>
-        </tr>
-        <tr>
-            <td>Lança curta</td> <td>9 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Lança de guerra</td> <td>21 denários</td> <td>2 slots</td>
-        </tr>
-        <tr>
-            <td>Lança longa</td> <td>30 denários</td> <td>2 slots</td>
-        </tr>
-    </table>
+                <p><strong>Nota:</strong> Bestas precisam de um turno para recarregar</p>
+                <p><strong>Nota:</strong> Bestas usam bônus de destreza para acertar e bônus de força para o dano</p>
+                <p><strong>Nota:</strong>Penalidades das distâncias de bestas: curta: sem penalidade; média: -2 em acertar; longa: -4 em acertar</p>
+            </section>
+             
+            <section>
+                <h3>Escudos</h3>
+                <table class="tabela" border="1">
+                    <tr>
+                        <th>Escudo</th> <th>Efeito</th> <th>Mãos</th>
+                    </tr>
+                    <tr>
+                        <td>Bloquel</td> <td>Nenhum</td> <td>Uma mão</td>
+                    </tr>
+                    <tr>
+                        <td>Escudo redondo</td> <td>+1 de defesa ativa</td> <td>Uma mão</td>
+                    </tr>
+                    <tr>
+                        <td>Escudo oval</td> <td>+2 de defesa ativa -1 de defesa passiva</td> <td>Uma mão</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+
+    <section class="combate">
+        <h2 id="Combate"><a href="#sumario">Combate</a></h2>
+        <p>O combate tem basicamente 4 etapas: Iniciativa; Acertando/Defesa passiva; Vencendo defesa/Defesa ativa; Dano infligido/Absorvido</p>
+        <h3>Termos</h3>
+        <p><strong>Iniciativa:</strong> Se refere a quem vai atacar primeiro. Todos os envolvidos rolam um d20 + bônus de destreza e outros, quem tirar mais pontos começa atacando. Isso pode mudar dependendo do contexto, como emboscadas, por exemplo</p>
+        <p><strong>Acertando:</strong> É quando o atacante tenta passar da defesa passiva do oponente. Para isso o atacante rola um d20 + bônus</p>
+        <p><strong>Defesa passiva</strong> Se refere a chance do atacante errar e do defensor desviar. O defensor não rola dado para saber sua defesa passiva, ele tem 10 de padrão + bônus de destreza</p>
+        <p><strong>Vencendo a defesa:</strong> Quando o atacante passa a defesa passiva ele deve vencer a defesa ativa. Para isso ele não rola dado, usa o mesmo número tirado em "acertando" + bônus</p>
+        <p><strong>Defesa Ativa:</strong> Aqui o defensor rola um dado d20 para tentar se defender do ataque</p>
+        <p><strong>Dano infligido:</strong> Quando o atacante passa das duas defesas, ele rola o dado do dano de sua arma + bônus de força</p>
+        <p><strong>Dano absorvido</strong> Existem coisas que o defensor pode usar para absorver uma parte do dano infligido. Nesse caso ele faz a conta: dano infligido - dano absorvido = dano recebido</p>
+        <p><strong>Nota:</strong> Todo o ataque que passa das duas defesas inflige dano. Se o defensor consegue absorver todo o dano que o atacante tirou no dado, o defensor é ferido com 1 de dano</p>
+        <h3>Tempo do turno de combate</h3>
+        <p>Cada turno de combate dura 6 segundos do tempo do jogo, não da vida real</p>
+        <h3>Acertando e Defendendo</h3>
+        <h4>Acertando, errando/esquivando</h4>
+        <p>Para acertar o alvo o atacante joga um dado de vinte lados, 11 pra cima ele acerta, 10 pra baixo ele erra. Na maioria das vezes o atacante pode escolher se soma o bônus de força ou destreza. O defensor só pode somar destreza, o defensor não irá jogar um dado nesse momento, ele vai somar a destreza com a defesa padrão (10). Se o ataque superar a defesa nessa primeira parte, o defensor ainda pode se defender dependendo dos equipamentos</p>
+        <h4>Acertando/Defendendo</h4>
+        <p>Se o defensor tiver um escudo rolará um dado de vinte lados e vai somar o resultado com o bônus do seu menor atributo entre força e destreza. Se o resultado for maior que o resultado do atacante, o defensor consegue defender. Se for menor, o atacante acerta. Se for o mesmo número, o atacante acerta, mas o defensor só recebe metade do dano</p>
+        <p>Se o defensor não têm um escudo, mas tem uma arma de porte médio ou grande rolará um dado de vinte lados e vai somar o resultado com o bônus do seu menor atributo entre força e destreza. Se o resultado for 3 pontos maior que o resultado do atacante, o defensor consegue defender. Se for 1 ponto maior, o atacante acerta. Se for 2 pontos maior, o atacante acerta, mas o defensor só recebe metade do dano</p>
+        <p>Se o defensor não têm um escudo, mas tem uma arma de porte pequeno rolará um dado de vinte lados e vai somar o resultado com o bônus do seu menor atributo entre força e destreza. Se o resultado for 5 pontos maior que o resultado do atacante, o defensor consegue defender. Se for 3 pontos maior, o atacante acerta. Se for 4 pontos maior, o atacante acerta, mas o defensor só recebe metade do dano</p>
+        <h4>Dano recebido/absorvido</h4>
+        <p>Se o atacante conseguir passar pelas defesas (passiva e ativa) do defensor, ele vai rolar o dado para decidir o dano causado. Se o defensor tiver armadura, essa absorve um pouco de dano (cada armadura absorve um dano já definido)</p>
+        <h3>Bônus de diferença de ataque x defesa</h3>
+        <p>Se o atacante acerta e o defensor não consegue defender, pega o número que o defensor precisaria ter tirado para bloquear o golpe e subtrai o que ele tirou, o resultado é dividido por 4 e o resultado da divisão é o bônus de dano para o atacante. Esse bônus não pode ultapassar o dano máximo da arma. Ex: o atacante com uma espada d12 tira 17 e o defensor com um bloquel tira 5. para se defender, o defensor teria que ter tirado 18. 18 menos 5 = 13. 13 dividido por 4 = 3 (sempre arredonda para baixo). O atacante rola o dado de dano, que no caso é 12, e tira 10. Ele soma o 10 + o bônus de diferença de ataque defesa, que é 3. Fica 13, mas a arma é um d12, então fica 12 de dano. Então ele pode colocar seus outros bônus (se tiver), como o de força... . Esses podem superar o dano máximo da arma</p>
+        <h3>Ataque Crítico (20 no dado)</h3>
+        <p>Se o ataque passar o atacante vai rolar o dado da arma + o dado da metade do dado da arma. (um pouco confuso, qualquer coisa pergunta)</p>
+        <h3>Ataque forte</h3>
+        <p>Antes de atacar, o jogador pode declarar que vai fazer um ataque forte. Vai ser mais difícil acertar (-2 Acertando), mas se passar ele ganha + 2 de dano, se ele estiver com arma de duas mãos +3 de dano.</p>
+        <h3>Atordoar</h3>
+        <p>Antes de atacar, o jogador pode declarar que vai tentar atordoar o oponente. Vai ser mais difícil acertar (+5 para a defesa passiva do inimigo). Se o ataque passar, o jogador rola o dano contra a constituição que o oponente ainda tem, se chegar a 0 o oponente desmaia</p>
+    </section>
+
+    <section class="animais">
+        <h2 id="Animais"><a href="#sumario">Animais</a></h2>
+        <p>Lobos</p>
+        <p>Pontos de vida: 12; força 4; destreza 6; constituição 6; inteligência 4; sabedoria 6; carisma 3; Ataque d8. +2 defesa passiva</p>
+        <p>Se houver mais um lobo perto: +1 acertando +1 dano</p>
+        <p>Ursos</p>
+        <p>Pontos de vida: 22; força 8; destreza 3; constituição 11; inteligência 2; sabedoria 4; carisma 2; Ataque d12</p>
+        <p>Se ele ultrapassar a defesa por 5 ou mais, derruba o alvo</p>
+        <p>Javalis</p>
+        <p>Pontos de vida: 16; força 7; destreza 4; constituição 9; inteligência 2; sabedoria 4; carisma 3; Ataque d10</p>
+        <p>Se correr antes do ataque: +2 vencendo defesa ativa +2 dano (mínimo 10 metros)</p>
+        <p>Linces</p>
+        <p>Pontos de vida: 8; força 3; destreza 8; constituição 4; inteligência 3; sabedoria 6; carisma 2; Ataque d8. +3 defesa passiva</p>
+        <p>Se ele atacar sem ser visto +3 de dano</p>
+        <p>Cães selvagens</p>
+        <p>Pontos de vida: 10; força 4; destreza 6; constituição 5; inteligência 4; sabedoria 5; carisma 4; Ataque d8. +1 defesa passiva</p>
+        <p>Alces</p>
+        <p>Pontos de vida: 24; força 8; destreza 5; constituição 12; inteligência 2; sabedoria 4; carisma 2; Ataque d10</p>
+        <p>Cervos</p>
+        <p>Pontos de vida: 12; força 3; destreza 8; constituição 12; inteligência 2; sabedoria 6; carisma 2; Ataque d4. +2 defesa passiva</p>
+        <p>Auroque</p>
+        <p>Pontos de vida: 30; força 8; destreza 3; constituição 15; inteligência 2; sabedoria 4; carisma 2; Ataque d12</p>
+        <p>Se ele correr +4 de dano (mínimo 10 metros)</p>
+        <p>Cobras</p>
+        <p>Pontos de vida: 6; força 2; destreza 8; constituição 3; inteligência 1; sabedoria 6; carisma 1; Ataque d4. +1 defesa passiva</p>
+        <p>Algumas tem veneno que tiram d3 de pontos de vida por dia até a vitíma tomar um antídoto</p>
+        <p>Texugo</p>
+        <p>>Pontos de vida: 8; força 3; destreza 4; constituição 4; inteligência 2; sabedoria 4; carisma 2; Ataque d8</p>
+        <p>Se ele morder alguém, o jogador deve passar por um teste de constituição, se falhar sofre -1 em acertando no próximo ataque</p>
+        <p>Alce</p>
+        <p>>Pontos de vida: 18; força 6; destreza 4; constituição 9; inteligência 2; sabedoria 4; carisma 2; Ataque d6</p>
+        <p>Se ele correr +4 de dano (mínimo 10 metros)</p>
+        <p>Mula</p>
+        <p>>Pontos de vida: 20; força 6; destreza 4; constituição 10; inteligência 3; sabedoria 4; carisma 3; Ataque d6</p>
+        <p>Cavalo comum</p>
+        <p>Pontos de vida: 18; força 7; destreza 6; constituição 9; inteligência 3; sabedoria 5; carisma 5; Ataque d8</p>
+        <p>Cavalo de Guerra (Destrier)</p>
+        <p>Pontos de vida: 22; força 8; destreza 6; constituição 11; inteligência 3; sabedoria 6; carisma 6; Ataque d10</p>
+        <h3>Montaria</h3>
+        <p>enquanto montado, o personagem dobra a distância percorrida por dia. Se o cavalo correr pelo menos 10 metros antes de um ataque corpo a corpo, o cavaleiro recebe +2 de dano no primeiro ataque da rodada. Se o cavalo sofrer dano enquanto estiver em movimento, o cavaleiro deve passar em um teste de Destreza para não cair</p>
+    </section>
+
+    <section class="economia tabelasAlinhada">
+
+        <section class="bloco">
+            <h2 id="Economia"><a href="#sumario">Economia</a></h2>
+            <p>1 libra de prata equivale 240 denários</p>
+            <p>1 solidus equivale a 12 denários</p>
+            <p>1 denário equivale a 10 óbolos</p>
+            <p>1 Óbolo equivale a 1 pão</p>
+
+            <h3>Preço e peso das coisas</h3>
+        </section>
+        <div>
+            <h4>Comidas</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Comida</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Pão</td> <td>1 óbolo</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Maçã</td> <td>1 óbolo</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Pera</td> <td>1 óbolo</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Ameixa</td> <td>1 óbolo</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Cebola</td> <td>1 óbolo</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Ovo</td> <td>2 óbolos</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Queijo</td> <td>3 óbolos</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Carne seca</td> <td>6 óbolos</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Peixe seco</td> <td>6 óbolos</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Saco de grãos</td> <td>18 denários</td> <td>2 slots</td>
+                </tr>
+                <tr>
+                    <td>Refeição simples</td> <td>1 denário</td>
+                </tr>
+                <tr>
+                    <td>Refeição farta</td> <td>3 denários</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Bebidas</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Bebida</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Garrafa de vinho comum</td> <td>4 denários</td> <td>1/2 slot</td>
+                </tr>
+                <tr>
+                    <td>Garrafa de vinho nobre</td> <td>8 denários</td> <td>1/2 slot</td>
+                </tr>
+                <tr>
+                    <td>Barril pequeno de cerveja</td> <td>8 denários</td> <td>2 slots</td>
+                </tr>
+                <tr>
+                    <td>Caneca de cerveja</td> <td>2 óbolos</td>
+                </tr>
+                <tr>
+                    <td>Caneca de vinho</td> <td>5 óbolos</td>
+                </tr>
+            </table>
+            <p><strong>Nota:</strong> uma garrafa de vinho tem a quantidade para 10 canecas.<br> Um barril de cerveja contém a quantidade para 50 canecas</p>
+        </div>
+        <div>
+            <h4>Equipamentos</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Equipamento</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Agulha e linha</td> <td>1 denário</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Bandagem</td> <td>1 óbolo</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Bolsa</td> <td>2 denários</td> <td>1/2 slot</td>
+                </tr>
+                <tr>
+                    <td>Caneca</td> <td>3 óbolos</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Cantil</td> <td>2 denários</td> <td>1/2 slot</td>
+                </tr>
+                <tr>
+                    <td>Cobertor</td> <td>3 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Colher</td> <td>1 óbolo</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Corda (10m)</td> <td>3 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Frasco para poções</td> <td>6 óbolos</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Lanterna</td> <td>8 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Machado de lenhador</td> <td> 6 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Manto</td> <td>6 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Martelo de ferreiro</td> <td>4 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Mochila</td> <td>5 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Pá</td> <td>5 denários</td> <td>2 slots</td>
+                </tr>
+                <tr>
+                    <td>Pederneira</td> <td>1 denário</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Picareta</td> <td>8 denários</td> <td>2 slots</td>
+                </tr>
+                <tr>
+                    <td>Serra</td> <td>6 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Tenda pequena</td> <td>18 denários</td> <td>2 slots</td>
+                </tr>
+                <tr>
+                    <td>Tigela de madeira</td> <td>3 óbolos</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Tocha</td> <td>5 óbolos</td> <td>1/2 slot</td>
+                </tr>
+                <tr>
+                    <td>Vela</td> <td>2 óbolos</td> <td>1/10 slot</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Adagas</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Adaga</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Faca</td> <td>3 denários</td> <td>1/2 slot</td>
+                </tr>
+                <tr>
+                    <td>Punhal</td> <td>8 denários</td> <td>1/2 slot</td>
+                </tr>
+                <tr>
+                    <td>Adaga</td> <td>15 denários</td> <td>1/2 slot</td>
+                </tr>
+                <tr>
+                    <td>Adaga nobre</td> <td>40 denários</td> <td>1/2 slot</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Espadas</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Espada</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Espada curta</td> <td>20 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Espada mal forjada</td> <td>35 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Espada franca</td> <td>60 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Espada nobre</td> <td>130 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Espada de duas mãos</td> <td>170 denários</td> <td>2 slots</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Lanças</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Lança</th> <th>Preço</th> <th>1 slot</th>
+                </tr>
+                <tr>
+                    <td>Lança curta</td> <td>9 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Lança de guerra</td> <td>21 denários</td> <td>2 slots</td>
+                </tr>
+                <tr>
+                    <td>Lança longa</td> <td>30 denários</td> <td>2 slots</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Machados</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Machado</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Machado pequeno</td> <td>8 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Machado médio</td> <td>15 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Machado de guerra</td> <td>30 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Machado de duas mãos</td> <td>55 denários</td> <td>2 slots</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Martelos</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Martelo</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Martelo leve</td> <td>6 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Martelo militar</td> <td>18 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Malho</td> <td>40 denários</td> <td>2 slots</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Bastões</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Bastão</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Bastão leve</td> <td>1 denário</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Bordão</td> <td>3 denários</td> <td>2 slots</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Escudos</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Escudo</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Bloquel</td> <td>9 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Escudo redondo</td> <td>18 denários</td> <td>2 slots</td>
+                </tr>
+                <tr>
+                    <td>Escudo oval</td> <td>30 denários</td> <td>2 slots</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Arcos</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Arco</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Arco simples</td> <td>12 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Arco de caça</td> <td>25 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Arco de guerra</td> <td>50 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Arco de mestre</td> <td>90 denários</td> <td>1 slot</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Bestas</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Besta</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Besta comum</td> <td>45 denários</td> <td>2 slots</td>
+                </tr>
+                <tr>
+                    <td>Besta refinada</td> <td>80 denários</td> <td>2 slots</td>
+                </tr>
+                <tr>
+                    <td>Besta aperfeiçoada</td> <td>130 denários</td> <td>2 slots</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Flechas e Virolas</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Munição</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Flecha</td> <td>3 óbolos</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>10 flechas</td> <td>2 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Virola</td> <td>4 óbolos</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>10 virolas</td> <td>3 denários</td> <td>1 slot</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Vestimentas</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Vestimenta</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Túnica simples</td> <td>4 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>calça</td> <td>3 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Par de botas</td> <td>6 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Luvas</td> <td>2 denários</td> <td>1/10 slot (cada)</td>
+                </tr>
+                <tr>
+                    <td>Chapéu</td> <td>2 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Cinto</td> <td>2 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Roupa nobre</td> <td>40 denários</td> <td>1 slot</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Armaduras</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Armadura</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Armadura de couro</td> <td>35 denários</td> <td>2 slots</td>
+                </tr>
+                <tr>
+                    <td>Armadura de couro reforçado</td> <td>80 denários</td> <td>2 slots</td>
+                </tr>
+                <tr>
+                    <td>Cota de malha</td> <td>180 denários</td> <td>2 slots</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Poções</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Poção</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Poção de cura</td> <td>18 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Poção de acerto</td> <td>22 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Poção de desvio</td> <td>22 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Poção de reflexo</td> <td>22 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Poção de dano</td> <td>25 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Antídoto</td> <td>12 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Veneno de fraqueza</td> <td>20 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Veneno de lentidão</td> <td>20 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Veneno da morte menor</td> <td>22 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Veneno da morte</td> <td>40 denários</td> <td>1/4 slot</td>
+                </tr>
+                <tr>
+                    <td>Tônico da vida</td> <td>25 denários</td> <td>1/4 slot</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Livros</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Objeto</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Pergaminho</td> <td>2 denários</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Pena</td> <td>1 óbolo</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Tinteiro</td> <td>2 denários</td> <td>1/10 slot</td>
+                </tr>
+                <tr>
+                    <td>Livro comum</td> <td>60 denários</td> <td>1 slot</td>
+                </tr>
+                <tr>
+                    <td>Livro em latim</td> <td>120 denários</td> <td>1 slot</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Animais</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Animal</th> <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Galinha</td> <td>2 denários</td>
+                </tr>
+                <tr>
+                    <td>Cachorro</td> <td>10 denários</td>
+                </tr>
+                <tr>
+                    <td>Cabra</td> <td>12 denários</td>
+                </tr>
+                <tr>
+                    <td>Ovelha</td> <td>15 denários</td>
+                </tr>
+                <tr>
+                    <td>Porco</td> <td>20 denários</td>
+                </tr>
+                <tr>
+                    <td>Vaca</td> <td>45 denários</td>
+                </tr>
+                <tr>
+                    <td>Cavalo comum</td> <td>120 denários</td>
+                </tr>
+                <tr>
+                    <td>Cavalo de guerra</td> <td>350 denários</td>
+                </tr>
+                <tr>
+                    <td>Mula</td> <td>70 denários</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Ingredientes</h4>
+            <table class="maisTabela" border="1">
+                <tr>
+                    <th>Ingrediente</th> <th>Porção</th> <th>Preço</th> <th>Peso</th>
+                </tr>
+                <tr>
+                    <td>Maço de Ervas cicatrizantes (Mil-folhas, Calêndula, Confrei)</td> <td>4 porções</td> <td>2 óbolos</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Maço de hortelã</td> <td>4 porções</td> <td>2 óbolos</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Maço de Camomila</td> <td>4 porções</td> <td>2 óbolos</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Maço de alecrim</td> <td>4 porções</td> <td>4 óbolos</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Pote de musgo</td> <td>8 porções</td> <td>1 óbolos</td> <td>1/4</td>
+                </tr>
+                <tr>
+                    <td>Maço de casca de salgueiro</td> <td>4 porções</td> <td>3 óbolos</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Pote de mel</td> <td>8 porções</td> <td>1 denário</td> <td>1/4</td>
+                </tr>
+                <tr>
+                    <td>Maço de alho</td> <td>4 porções</td> <td>3 óbolos</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Maço de tomilho</td> <td>4 porções</td> <td>5 óbolos</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Maço de urtiga</td> <td>4 porções</td> <td>3 óbolos</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Maço de lavanda</td> <td>4 porções</td> <td>2 denários</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Maço de erva de São João</td> <td>4 porções</td> <td>2 denários</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Saquinho de cogumelo branco</td> <td>4 porções</td> <td>3 denários</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Saquinho de beladona</td> <td>2 porções</td> <td>12 denários</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Saquinho de Ginseng</td> <td>4 porções</td> <td>15 denários</td> <td>1/4</td>
+                </tr>
+                <tr>
+                    <td>Maço de hortelã</td> <td>4 porções</td> <td>2 óbolos</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Frasco de veneno de cobra</td> <td>1 porção</td> <td>8 denários</td> <td>1/4</td>
+                </tr>
+                <tr>
+                    <td>Saco de pimenta</td> <td>12 porções</td> <td>4 denários</td> <td>1/2</td>
+                </tr>
+                <tr>
+                    <td>Garrafa de vinagre</td> <td>10 porções</td> <td>2 denários</td> <td>1/2</td>
+                </tr>
+                <tr>
+                    <td>Saco de sal</td> <td>20 porções</td> <td>2 óbolos</td> <td>1/4</td>
+                </tr>
+                <tr>
+                    <td>Saquinho de cogumelo venenoso</td> <td>4 porções</td> <td>1 denário</td> <td>1/4</td>
+                </tr>
+                <tr>
+                    <td>Maço de hera</td> <td>4 porções</td> <td>5 óbolos</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Maço de raiz sonífera (cereja-de-inverno)</td> <td>4 porções</td> <td>8 óbolos</td> <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Pote de musgo úmido</td> <td>4 porções</td> <td>2 óbolos</td> <td>1/4</td>
+                </tr>
+                <tr>
+                    <td>Saco de carvão vegetal</td> <td>20 porções</td> <td>2 denários</td> <td>1/2</td>
+                </tr>
+            </table>
+        </div>   
+
+        <section class="bloco">
+            <h3>Comprando e vendendo</h3>
+            <p>O comércio no Império Carolíngio é baseado, acima de tudo, na confiança e na reputação. Ferreiros, curtidores, carpinteiros e outros artesãos passam anos conquistando clientes, que sabem da qualidade de seu trabalho e podem responsabilizá-los caso um produto apresente defeitos. Por isso, aventureiros dificilmente conseguem vender um item pelo mesmo valor que pagariam para comprá-lo. Um mercador ou artesão não sabe a origem daquele objeto: ele pode ter sido roubado, estar danificado ou ter sido fabricado com materiais de baixa qualidade. Além disso, ao comprá-lo, o comerciante assume o risco de revendê-lo e precisa obter lucro. Assim, salvo em situações especiais, itens usados ou vendidos por aventureiros costumam ser comprados por um valor significativamente menor que o preço de mercado. Apenas mercadorias muito raras, de excelente qualidade ou vendidas a alguém que conheça e confie nos personagens podem alcançar um preço próximo ao de um produto novo.</p>
+            <P>Isso também se aplica a plantas e hortaliças. Para poções e remédios a situação é ainda mais complicada, as pessoas dificilmente comprariam de um aventureiro desconhecido.</P>
+            <p>Todo comerciante compra para revender. Além disso, quanto maior a necessidade de confiança ou conhecimento técnico sobre um produto, menor será o preço oferecido por um vendedor desconhecido.</p>
+            <p>Se os personagens venderem regularmente para o mesmo mercador e provarem que são honestos, os preços melhoram naturalmente.</p>
+        </section>
+    </section>
+
+    <section class="ano">
+
+        <h2 id="Ano"><a href="#sumario">Estações do ano</a></h2>
+        <h3>Primavera</h3>
+        <p>Duração: Março - Maio</p>
+        <p>A neve começa a derreter. As pessoas começam a plantar trigo e cevada, reparar casas e cercas e retomar viagens. Os rios estão cheios e as estradas lamacentas</p>
+        <h3>Verão</h3>
+        <p>Duração: Junho - Agosto</p>
+        <p>É a estação mais ativa. O comércio é forte, podem ter campanhas militares e viagens longas</p>
+        <h3>Outono</h3>
+        <p>Duração: Setembro - Novembro</p>
+        <p>Tempo da colheita. As pessoas colhem grãos, armazenam comida e se preparam para o inverno</p>
+        <h3>Inverno</h3>
+        <p>Duração: Dezembro - Fevereiro</p>
+        <p>A estação mais difícil. Viagens complicadas, estradas bloqueadas, frio extremo, cuidado redobrado com os animais e reparos em casa</p>
+    </section>
     
-    <h4>Machados</h4>
-    <table border="1">
-        <tr>
-            <th>Machado</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Machado pequeno</td> <td>8 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Machado médio</td> <td>15 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Machado de guerra</td> <td>30 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Machado de duas mãos</td> <td>55 denários</td> <td>2 slots</td>
-        </tr>
-    </table>
+    <section class="pocoes">
+        <h2 id="Poções"><a href="#sumario">Poções</a></h2>
+        <p><strong>Nota:</strong> Os únicos que podem fazer todas as poções são os médicos ou quem tem a habilidade "Alquimista". Noviços podem fazer algumas poções</p>
+        <p>Poção de cura: recupera 4 de vida</p>
+        <p>Poção de desvio: + 2 em defesa passiva no dia</p>
+        <p>Poção de acerto: + 2 em acerto de defesa passiva no dia</p>
+        <p>Poção de reflexo: + 2 em defesa ativa no dia</p>
+        <p>Poção de dano: + 2 em dano no dia</p>
+        <p>Veneno de fraqueza: -2 em dano no dia</p>
+        <p>Veneno de lentidão: -2 de iniciativa, defesa passiva e acertando</p>
+        <p>Veneno da morte menor: -1d2+1</p>
+        <p>Veneno da morte: -2d4+1 de vida por dia</p>
+        <p>Tônico da vida: +2 de vida máxima por 24 horas. Quem tomar o tônico joga o d6, qualquer número diferente de 1 dá o bônus. Tirar 1 significará uma semana com -2 de vida.</p>
+        <p>As poções acima estão em sua melhor forma, mas há algumas necessidades para elas chegarem nesse nível, e algumas penalizações caso o fabricante não tenha os atributos necessários:</p>
+        <p>Se o personagem tem no mínimo 1 de sabedoria ou inteligência, não conseguirá fazer poções</p>
+        <p>Se o personagem tiver no mínimo 2 em sabedoria e inteligência, conseguirá fazer poções que terão efeito de +1</p>
+        <p>Se o personagem tiver no mínimo 3 em sabedoria e inteligência, conseguirá fazer poções que terão efeito de +1 ou +2. Será jogado um dado para decidir</p>
+        <p>Se o personagem tiver no mínimo 4 em sabedoria e inteligência, conseguirá fazer poções de cura que terão efeito de +2 a +4. Será jogado um dado para decidir</p>
+        <p>Se o personagem tiver no mínimo 6 em sabedoria e inteligência, conseguirá fazer poções que terão efeito de +2. Poções de cura terão efeito de +4</p>
+        <p>Veneno da morte menor: se o personagemtiver pelo menos 3 em abedoria e inteligência, conseguirá fazer esse veneno que terá efeito de 1 a 2 +1, será jogado um dado para decidir</p>
+        <p>Veneno da morte: Se o personagem tiver pelo menos 4 em sabedoria e inteligência, conseguirá fazer esse veneno que terá efeito de 2 dados de 1 a 4 +1. Será jogado um dado para decidir.  Se o personagem tiver pelo menos 6 em sabedoria e inteligência, conseguirá fazer esse veneno que terá efeito de 2d4+1.</p>
+        <h3>Tonico da vida</h3>
+        <p>em teoria dá +2 pontos de vida por dia, só pode ser usado 1 por dia (se tomar mais, o segundo não tem efeito positivo). O jogador que tomar esse tônico vai rolar um d2, d4 ou d6 (deende da qualidade), se tirar qualquer número que não seja 1, o jogador ganha 2 PV. Se tirar 1, o jogador perde 2 PV por uma semana. Se tomar o tônico durante essa semana do -2 PV e tirar 1 de novo, o efeito fica permanente</p>
+        <p>Tõnico da vida: Se o personagem tiver no mínimo 3 em sabedoria e inteligência, conseguirá fazer o tônico com risco de d2, se tirar 2 ganha o bônus, tirar 1 significará uma semana com -2 de vida</p>
+        <p>Tõnico da vida: Se o personagem tiver no mínimo 4 em sabedoria e inteligência, conseguirá fazer o tônico com risco de d4, se tirar 2 ganha o bônus, tirar 1 significará uma semana com -2 de vida</p>
+        <p>Tõnico da vida: Se o personagem tiver no mínimo 6 em sabedoria e inteligência, conseguirá fazer o tônico com risco de d6, se tirar 2 ganha o bônus, tirar 1 significará uma semana com -2 de vida</p>
+        <h3>Ingredientes</h3>
+        <p>Poção de cura = mel e erva cicatrizante (frasco)</p>
+        <p>Poção de desvio = hortelã e cogumelo branco (frasco)</p>
+        <p>Poção de acerto = alecrim e ginseng (frasco)</p>
+        <p>Poção de reflexo = hortelã e flor de lavanda (frasco)</p>
+        <p>Poção de dano = pimenta e alho silvestre (frasco)</p>
+        <p>Veneno de fraqueza = cogumelo venenoso e hera (frasco)</p>
+        <p>Veneno de lentidão = raiz sonífera e musgo úmido (frasco)</p>
+        <p>Veneno da morte menor = cogumelo venenoso e musgo (frasco)</p>
+        <p>Veneno da morte = veneno de cobra e beladona (frasco)</p>
+        <p>Antídoto simples = carvão vegetal, hortelã e vinagre (frasco)</p>
+        <p>antídoto avançado = mel, hortelã e veneno da cobra (frasco)</p>
+        <p>Chá para resfriado = hortelã, camomila e mel</p>
+        <p>Pomada para ferimentos = mel, musgo e casca de salgueiro (bandagem)</p>
+        <p>Compressa contra inflamação = urtiga, alho e vinagre (bandagem)</p>
+        <p>Chá digestivo = hortelã e alecrim</p>
+        <p>Remédio pra tosse = mel, tomilho e hortelã</p>
+        <p>Tônico revigorante = mel, ginseng e vinho (frasco)</p>
+        <p>Tônico da vida = mel, ginseng, pimenta, vinho e sangue de auroque ou urso. (frasco)</p>
+        <h4>Encontrando ingredientes</h4>
+        <p>O personagem procurará por uma hora e então rolará um teste de sabedoria. Depois rolará um d4 para ver qual a variedade dos ingredientes encontrados, as variedades devem estar abaixo do número tirado (respeitando o número tirado no teste de sabedoria). Então rolará um d4 para cada ponto tirado no d4 de variedade</p>
+        <h5>Campo</h5>
+        <p>hortelã 5-7, camomila 8-11, alecrim 12-15, lavanda 13-16, Erva de São João 17-20</p>
+        <h5>Floresta</h5>
+        <p>Musgo 2-3, ervas cicatrizantes 4-5, musgo-úmido 6-7, Cogumelo branco 8-9, Cogumelo venenoso 10-11, Urtiga 12-13, alho silvestre 14-15, tomilho 16, hera 17, Raiz sonífera 18, Ginseng 19, Beladona 20</p>
+        <h5>Rio</h5>
+        <p>Casca de salgueiro 6-10, Hortelã 11-15, ervas cicatrizantes 16-20</p>
+        <h5>Comprados</h5>
+        <p>Pimenta, sal, mel, vinagre</p>
+    </section>
 
-    <h4>Martelos</h4>
-    <table border="1">
-        <tr>
-            <th>Martelo</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Martelo leve</td> <td>6 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Martelo militar</td> <td>18 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Malho</td> <td>40 denários</td> <td>2 slots</td>
-        </tr>
-    </table>
+    <section class="nivel">
+        <h2 id="Subindo"><a href="#sumario">Subindo de nível</a></h2>
+        <p>Para subir de nível o personagem precisará de xp, que será vinculado com o atributo inteligência. Cada ponto de inteligência significará uma penalização ou um favorecimento de 5% no xp do nível</p>
+        <p>0 de inteligência: + 20% pra subir de nível</p>
+        <p>1 de inteligência: + 15% pra subir de nível</p>
+        <p>2 de inteligência: + 10% pra subir de nível</p>
+        <p>3 de inteligência: + 5% pra subir de nível</p>
+        <p>4 de inteligência: + 0% pra subir de nível</p>
+        <p>5 de inteligência: + 0% pra subir de nível</p>
+        <p>6 de inteligência: - 5% pra subir de nível</p>
+        <p>7 de inteligência: - 10% pra subir de nível</p>
+        <p>8 de inteligência: - 15% pra subir de nível</p>
+    </section>
 
-    <h4>Bastões</h4>
-    <table border="1">
-        <tr>
-            <th>Bastão</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Bastão leve</td> <td>1 denário</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Bordão</td> <td>3 denários</td> <td>2 slots</td>
-        </tr>
-    </table>
-
-    <h4>Escudos</h4>
-    <table border="1">
-        <tr>
-            <th>Escudo</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Bloquel</td> <td>9 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Escudo redondo</td> <td>18 denários</td> <td>2 slots</td>
-        </tr>
-        <tr>
-            <td>Escudo oval</td> <td>30 denários</td> <td>2 slots</td>
-        </tr>
-    </table>
-
-    <h4>Arcos</h4>
-    <table border="1">
-        <tr>
-            <th>Arco</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Arco simples</td> <td>12 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Arco de caça</td> <td>25 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Arco de guerra</td> <td>50 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Arco de mestre</td> <td>90 denários</td> <td>1 slot</td>
-        </tr>
-    </table>
-
-    <h4>Bestas</h4>
-    <table border="1">
-        <tr>
-            <th>Besta</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Besta comum</td> <td>45 denários</td> <td>2 slots</td>
-        </tr>
-        <tr>
-            <td>Besta refinada</td> <td>80 denários</td> <td>2 slots</td>
-        </tr>
-        <tr>
-            <td>Besta aperfeiçoada</td> <td>130 denários</td> <td>2 slots</td>
-        </tr>
-    </table>
-
-    <h4>Flechas e Virolas</h4>
-    <table border="1">
-        <tr>
-            <th>Munição</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Flecha</td> <td>3 óbolos</td> <td>1/10 slot</td>
-        </tr>
-        <tr>
-            <td>10 flechas</td> <td>2 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Virola</td> <td>4 óbolos</td> <td>1/10 slot</td>
-        </tr>
-        <tr>
-            <td>10 virolas</td> <td>3 denários</td> <td>1 slot</td>
-        </tr>
-    </table>
-
-    <h4>Vestimentas</h4>
-    <table border="1">
-        <tr>
-            <th>Vestimenta</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Túnica simples</td> <td>4 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>calça</td> <td>3 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Par de botas</td> <td>6 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Luvas</td> <td>2 denários</td> <td>1/10 slot (cada)</td>
-        </tr>
-        <tr>
-            <td>Chapéu</td> <td>2 denários</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Cinto</td> <td>2 denários</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Roupa nobre</td> <td>40 denários</td> <td>1 slot</td>
-        </tr>
-    </table>
-
-    <h4>Armaduras</h4>
-    <table border="1">
-        <tr>
-            <th>Armadura</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Armadura de couro</td> <td>35 denários</td> <td>2 slots</td>
-        </tr>
-        <tr>
-            <td>Armadura de couro reforçado</td> <td>80 denários</td> <td>2 slots</td>
-        </tr>
-        <tr>
-            <td>Cota de malha</td> <td>180 denários</td> <td>2 slots</td>
-        </tr>
-    </table>
-
-    <h4>Poções</h4>
-    <table border="1">
-        <tr>
-            <th>Poção</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Poção de cura</td> <td>18 denários</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Poção de acerto</td> <td>22 denários</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Poção de desvio</td> <td>22 denários</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Poção de reflexo</td> <td>22 denários</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Poção de dano</td> <td>25 denários</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Antídoto</td> <td>12 denários</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Veneno de fraqueza</td> <td>20 denários</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Veneno de lentidão</td> <td>20 denários</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Veneno da morte menor</td> <td>22 denários</td> <td>1/4 slot</td>
-        </tr>
-        <tr>
-            <td>Veneno da morte</td> <td>40 denários</td> <td>1/4 slot</td>
-        </tr>
-        <<tr>
-            <td>Tônico da vida</td> <td>25 denários</td> <td>1/4 slot</td>
-        </tr>
-    </table>
-
-    <h4>Livros</h4>
-    <table border="1">
-        <tr>
-            <th>Objeto</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Pergaminho</td> <td>2 denários</td> <td>1/10 slot</td>
-        </tr>
-        <tr>
-            <td>Pena</td> <td>1 óbolo</td> <td>1/10 slot</td>
-        </tr>
-        <tr>
-            <td>Tinteiro</td> <td>2 denários</td> <td>1/10 slot</td>
-        </tr>
-        <tr>
-            <td>Livro comum</td> <td>60 denários</td> <td>1 slot</td>
-        </tr>
-        <tr>
-            <td>Livro em latim</td> <td>120 denários</td> <td>1 slot</td>
-        </tr>
-    </table>
-
-    <h4>Animais</h4>
-    <table border="1">
-        <tr>
-            <th>Animal</th> <th>Preço</th>
-        </tr>
-        <tr>
-            <td>Galinha</td> <td>2 denários</td>
-        </tr>
-        <tr>
-            <td>Cachorro</td> <td>10 denários</td>
-        </tr>
-        <tr>
-            <td>Cabra</td> <td>12 denários</td>
-        </tr>
-        <tr>
-            <td>Ovelha</td> <td>15 denários</td>
-        </tr>
-        <tr>
-            <td>Porco</td> <td>20 denários</td>
-        </tr>
-        <tr>
-            <td>Vaca</td> <td>45 denários</td>
-        </tr>
-        <tr>
-            <td>Cavalo comum</td> <td>120 denários</td>
-        </tr>
-        <tr>
-            <td>Cavalo de guerra</td> <td>350 denários</td>
-        </tr>
-        <tr>
-            <td>Mula</td> <td>70 denários</td>
-        </tr>
-    </table>
-
-    <h4>Ingredientes</h4>
-    <table border="1">
-        <tr>
-            <th>Ingrediente</th> <th>Porção</th> <th>Preço</th> <th>Peso</th>
-        </tr>
-        <tr>
-            <td>Maço de Ervas cicatrizantes (Mil-folhas, Calêndula, Confrei)</td> <td>4 porções</td> <td>2 óbolos</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Maço de hortelã</td> <td>4 porções</td> <td>2 óbolos</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Maço de Camomila</td> <td>4 porções</td> <td>2 óbolos</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Maço de alecrim</td> <td>4 porções</td> <td>4 óbolos</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Pote de musgo</td> <td>8 porções</td> <td>1 óbolos</td> <td>1/4</td>
-        </tr>
-        <tr>
-            <td>Maço de casca de salgueiro</td> <td>4 porções</td> <td>3 óbolos</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Pote de mel</td> <td>8 porções</td> <td>1 denário</td> <td>1/4</td>
-        </tr>
-        <tr>
-            <td>Maço de alho</td> <td>4 porções</td> <td>3 óbolos</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Maço de tomilho</td> <td>4 porções</td> <td>5 óbolos</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Maço de urtiga</td> <td>4 porções</td> <td>3 óbolos</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Maço de lavanda</td> <td>4 porções</td> <td>2 denários</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Maço de erva de São João</td> <td>4 porções</td> <td>2 denários</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Saquinho de cogumelo branco</td> <td>4 porções</td> <td>3 denários</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Saquinho de beladona</td> <td>2 porções</td> <td>12 denários</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Saquinho de Ginseng</td> <td>4 porções</td> <td>15 denários</td> <td>1/4</td>
-        </tr>
-        <tr>
-            <td>Maço de hortelã</td> <td>4 porções</td> <td>2 óbolos</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Frasco de veneno de cobra</td> <td>1 porção</td> <td>8 denários</td> <td>1/4</td>
-        </tr>
-        <tr>
-            <td>Saco de pimenta</td> <td>12 porções</td> <td>4 denários</td> <td>1/2</td>
-        </tr>
-        <tr>
-            <td>Garrafa de vinagre</td> <td>10 porções</td> <td>2 denários</td> <td>1/2</td>
-        </tr>
-        <tr>
-            <td>Saco de sal</td> <td>20 porções</td> <td>2 óbolos</td> <td>1/4</td>
-        </tr>
-        <tr>
-            <td>Saquinho de cogumelo venenoso</td> <td>4 porções</td> <td>1 denário</td> <td>1/4</td>
-        </tr>
-        <tr>
-            <td>Maço de hera</td> <td>4 porções</td> <td>5 óbolos</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Maço de raiz sonífera (cereja-de-inverno)</td> <td>4 porções</td> <td>8 óbolos</td> <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Pote de musgo úmido</td> <td>4 porções</td> <td>2 óbolos</td> <td>1/4</td>
-        </tr>
-        <tr>
-            <td>Saco de carvão vegetal</td> <td>20 porções</td> <td>2 denários</td> <td>1/2</td>
-        </tr>
-    </table>
-
-    <h3>Comprando e vendendo</h3>
-    <p>O comércio no Império Carolíngio é baseado, acima de tudo, na confiança e na reputação. Ferreiros, curtidores, carpinteiros e outros artesãos passam anos conquistando clientes, que sabem da qualidade de seu trabalho e podem responsabilizá-los caso um produto apresente defeitos. Por isso, aventureiros dificilmente conseguem vender um item pelo mesmo valor que pagariam para comprá-lo. Um mercador ou artesão não sabe a origem daquele objeto: ele pode ter sido roubado, estar danificado ou ter sido fabricado com materiais de baixa qualidade. Além disso, ao comprá-lo, o comerciante assume o risco de revendê-lo e precisa obter lucro. Assim, salvo em situações especiais, itens usados ou vendidos por aventureiros costumam ser comprados por um valor significativamente menor que o preço de mercado. Apenas mercadorias muito raras, de excelente qualidade ou vendidas a alguém que conheça e confie nos personagens podem alcançar um preço próximo ao de um produto novo.</p>
-    <P>Isso também se aplica a plantas e hortaliças. Para poções e remédios a situação é ainda mais complicada, as pessoas dificilmente comprariam de um aventureiro desconhecido.</P>
-    <p>Todo comerciante compra para revender. Além disso, quanto maior a necessidade de confiança ou conhecimento técnico sobre um produto, menor será o preço oferecido por um vendedor desconhecido.</p>
-    <p>Se os personagens venderem regularmente para o mesmo mercador e provarem que são honestos, os preços melhoram naturalmente.</p>
-
-    <h2 id="Ano"><a href="#sumario">Estações do ano</a></h2>
-    <h3>Primavera</h3>
-    <p>Duração: Março - Maio</p>
-    <p>A neve começa a derreter. As pessoas começam a plantar trigo e cevada, reparar casas e cercas e retomar viagens. Os rios estão cheios e as estradas lamacentas</p>
-    <h3>Verão</h3>
-    <p>Duração: Junho - Agosto</p>
-    <p>É a estação mais ativa. O comércio é forte, podem ter campanhas militares e viagens longas</p>
-    <h3>Outono</h3>
-    <p>Duração: Setembro - Novembro</p>
-    <p>Tempo da colheita. As pessoas colhem grãos, armazenam comida e se preparam para o inverno</p>
-    <h3>Inverno</h3>
-    <p>Duração: Dezembro - Fevereiro</p>
-    <p>A estação mais difícil. Viagens complicadas, estradas bloqueadas, frio extremo, cuidado redobrado com os animais e reparos em casa</p>
-
-    <h2 id="Poções"><a href="#sumario">Poções</a></h2>
-    <p><strong>Nota:</strong> Os únicos que podem fazer todas as poções são os médicos ou quem tem a habilidade "Alquimista". Noviços podem fazer algumas poções</p>
-    <p>Poção de cura: recupera 4 de vida</p>
-    <p>Poção de desvio: + 2 em defesa passiva no dia</p>
-    <p>Poção de acerto: + 2 em acerto de defesa passiva no dia</p>
-    <p>Poção de reflexo: + 2 em defesa ativa no dia</p>
-    <p>Poção de dano: + 2 em dano no dia</p>
-    <p>Veneno de fraqueza: -2 em dano no dia</p>
-    <p>Veneno de lentidão: -2 de iniciativa, defesa passiva e acertando</p>
-    <p>Veneno da morte menor: -1d2+1</p>
-    <p>Veneno da morte: -2d4+1 de vida por dia</p>
-    <p>Tônico da vida: +2 de vida máxima por 24 horas. Quem tomar o tônico joga o d6, qualquer número diferente de 1 dá o bônus. Tirar 1 significará uma semana com -2 de vida.</p>
-    <p>As poções acima estão em sua melhor forma, mas há algumas necessidades para elas chegarem nesse nível, e algumas penalizações caso o fabricante não tenha os atributos necessários:</p>
-    <p>Se o personagem tem no mínimo 1 de sabedoria ou inteligência, não conseguirá fazer poções</p>
-    <p>Se o personagem tiver no mínimo 2 em sabedoria e inteligência, conseguirá fazer poções que terão efeito de +1</p>
-    <p>Se o personagem tiver no mínimo 3 em sabedoria e inteligência, conseguirá fazer poções que terão efeito de +1 ou +2. Será jogado um dado para decidir</p>
-    <p>Se o personagem tiver no mínimo 4 em sabedoria e inteligência, conseguirá fazer poções de cura que terão efeito de +2 a +4. Será jogado um dado para decidir</p>
-    <p>Se o personagem tiver no mínimo 6 em sabedoria e inteligência, conseguirá fazer poções que terão efeito de +2. Poções de cura terão efeito de +4</p>
-    <p>Veneno da morte menor: se o personagemtiver pelo menos 3 em abedoria e inteligência, conseguirá fazer esse veneno que terá efeito de 1 a 2 +1, será jogado um dado para decidir</p>
-    <p>Veneno da morte: Se o personagem tiver pelo menos 4 em sabedoria e inteligência, conseguirá fazer esse veneno que terá efeito de 2 dados de 1 a 4 +1. Será jogado um dado para decidir.  Se o personagem tiver pelo menos 6 em sabedoria e inteligência, conseguirá fazer esse veneno que terá efeito de 2d4+1.</p>
-    <h3>Tonico da vida</h3>
-    <p>em teoria dá +2 pontos de vida por dia, só pode ser usado 1 por dia (se tomar mais, o segundo não tem efeito positivo). O jogador que tomar esse tônico vai rolar um d2, d4 ou d6 (deende da qualidade), se tirar qualquer número que não seja 1, o jogador ganha 2 PV. Se tirar 1, o jogador perde 2 PV por uma semana. Se tomar o tônico durante essa semana do -2 PV e tirar 1 de novo, o efeito fica permanente</p>
-    <p>Tõnico da vida: Se o personagem tiver no mínimo 3 em sabedoria e inteligência, conseguirá fazer o tônico com risco de d2, se tirar 2 ganha o bônus, tirar 1 significará uma semana com -2 de vida</p>
-    <p>Tõnico da vida: Se o personagem tiver no mínimo 4 em sabedoria e inteligência, conseguirá fazer o tônico com risco de d4, se tirar 2 ganha o bônus, tirar 1 significará uma semana com -2 de vida</p>
-    <p>Tõnico da vida: Se o personagem tiver no mínimo 6 em sabedoria e inteligência, conseguirá fazer o tônico com risco de d6, se tirar 2 ganha o bônus, tirar 1 significará uma semana com -2 de vida</p>
-    <h3>Ingredientes</h3>
-    <p>Poção de cura = mel e erva cicatrizante (frasco)</p>
-    <p>Poção de desvio = hortelã e cogumelo branco (frasco)</p>
-    <p>Poção de acerto = alecrim e ginseng (frasco)</p>
-    <p>Poção de reflexo = hortelã e flor de lavanda (frasco)</p>
-    <p>Poção de dano = pimenta e alho silvestre (frasco)</p>
-    <p>Veneno de fraqueza = cogumelo venenoso e hera (frasco)</p>
-    <p>Veneno de lentidão = raiz sonífera e musgo úmido (frasco)</p>
-    <p>Veneno da morte menor = cogumelo venenoso e musgo (frasco)</p>
-    <p>Veneno da morte = veneno de cobra e beladona (frasco)</p>
-    <p>Antídoto simples = carvão vegetal, hortelã e vinagre (frasco)</p>
-    <p>antídoto avançado = mel, hortelã e veneno da cobra (frasco)</p>
-    <p>Chá para resfriado = hortelã, camomila e mel</p>
-    <p>Pomada para ferimentos = mel, musgo e casca de salgueiro (bandagem)</p>
-    <p>Compressa contra inflamação = urtiga, alho e vinagre (bandagem)</p>
-    <p>Chá digestivo = hortelã e alecrim</p>
-    <p>Remédio pra tosse = mel, tomilho e hortelã</p>
-    <p>Tônico revigorante = mel, ginseng e vinho (frasco)</p>
-    <p>Tônico da vida = mel, ginseng, pimenta, vinho e sangue de auroque ou urso. (frasco)</p>
-    <h4>Encontrando ingredientes</h4>
-    <p>O personagem procurará por uma hora e então rolará um teste de sabedoria. Depois rolará um d4 para ver qual a variedade dos ingredientes encontrados, as variedades devem estar abaixo do número tirado (respeitando o número tirado no teste de sabedoria). Então rolará um d4 para cada ponto tirado no d4 de variedade</p>
-    <h5>Campo</h5>
-    <p>hortelã 5-7, camomila 8-11, alecrim 12-15, lavanda 13-16, Erva de São João 17-20</p>
-    <h5>Floresta</h5>
-    <p>Musgo 2-3, ervas cicatrizantes 4-5, musgo-úmido 6-7, Cogumelo branco 8-9, Cogumelo venenoso 10-11, Urtiga 12-13, alho silvestre 14-15, tomilho 16, hera 17, Raiz sonífera 18, Ginseng 19, Beladona 20</p>
-    <h5>Rio</h5>
-    <p>Casca de salgueiro 6-10, Hortelã 11-15, ervas cicatrizantes 16-20</p>
-    <h5>Comprados</h5>
-    <p>Pimenta, sal, mel, vinagre</p>
-
-    <h2 id="Subindo"><a href="#sumario">Subindo de nível</a></h2>
-    <p>Para subir de nível o personagem precisará de xp, que será vinculado com o atributo inteligência. Cada ponto de inteligência significará uma penalização ou um favorecimento de 5% no xp do nível</p>
-    <p>0 de inteligência: + 20% pra subir de nível</p>
-    <p>1 de inteligência: + 15% pra subir de nível</p>
-    <p>2 de inteligência: + 10% pra subir de nível</p>
-    <p>3 de inteligência: + 5% pra subir de nível</p>
-    <p>4 de inteligência: + 0% pra subir de nível</p>
-    <p>5 de inteligência: + 0% pra subir de nível</p>
-    <p>6 de inteligência: - 5% pra subir de nível</p>
-    <p>7 de inteligência: - 10% pra subir de nível</p>
-    <p>8 de inteligência: - 15% pra subir de nível</p>
+    <script src="js/index.js"></script>
 </body>
 </html>

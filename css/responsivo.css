@@ -1,0 +1,9 @@
+@media screen and (max-width: 1310px){
+
+    .sumario a:hover{
+     color: rgb(216, 193, 184);
+    border: none;
+    background-color: transparent;
+    border-radius: none;
+    }
+}

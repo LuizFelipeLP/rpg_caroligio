@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-color: rgb(216, 190, 156);
+}
+
+body a{
+    text-decoration: none;
+    color: #180f4a;
+    font-size: 28px;
+}
+
+.cima{
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    background-image: linear-gradient(180deg, rgb(114, 112, 112), rgb(41, 73, 44));
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    flex: 100%;
+    text-align: center;
+    color: #180f4a;
+    font-size: 30px;
+}
+
+.sumario{
+    height: auto;
+   margin-bottom: 5%;
+   flex-flow: row wrap;
+   justify-content: space-around;
+}
+
+.sumario a{
+    text-decoration: none;
+    padding: 15px 10px;
+    color: rgb(32, 15, 15);
+    font-size: 17px;
+    
+}
+
+.sumario a:hover{
+    color: rgb(204, 79, 29);
+    border: 2px solid #180f4a;
+    background-color: rgb(21, 21, 29);
+    border-radius: 5px;
+}
+
+.corpo{
+    padding: 40px;
+}
+
+.atributo{
+    padding: 40px;
+    background-color: rgb(226, 176, 81);
+}
+
+.peso{
+    padding: 40px;
+    background-color: rgb(206, 135, 88);
+}
+
+.personagem{
+    padding: 40px;
+}
+
+.vida{
+    padding: 40px;
+    background-color: rgb(182, 72, 72);
+}
+
+.armas{
+    padding: 40px;
+    background-color:  rgb(148, 163, 175);
+}
+
+.combate{
+    padding: 40px;
+    background-color: rgb(196, 190, 190);
+}
+
+.animais{
+    padding: 40px;
+    background-color: rgb(109, 206, 109);
+}
+
+.economia{
+    padding: 40px;
+    background-color: rgb(236, 236, 91);
+}
+
+.ano{
+    padding: 40px;
+    background-color: palegreen;
+}
+
+.pocoes{
+    padding: 40px;
+    background-color: rgb(183, 138, 226);
+}
+
+.nivel{
+    padding: 40px;
+    background-color: rgb(88, 76, 99);
+}
+
+.tabela{
+    background-color: rgb(156, 140, 140);
+    border: solid 2px rgb(94, 72, 11);
+}
+
+.tabela th{
+    background-color: rgb(2, 2, 2);
+    color: gray;
+    text-align: center;
+}
+
+.tabela tr{
+    text-align: center;
+}
+
+.maisTabela{
+    background-color: rgb(83, 43, 16);
+    border: solid 2px rgb(112, 109, 101);
+}
+
+.maisTabela th{
+    background-color: rgb(22, 148, 11);
+    color: rgb(255, 251, 251);
+    text-align: center;
+}
+
+.maisTabela tr{
+    text-align: center;
+}
+
+.tabelasAlinhada{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.bloco{
+    flex-basis: 100%;
+    width: 100%;
+}
+
